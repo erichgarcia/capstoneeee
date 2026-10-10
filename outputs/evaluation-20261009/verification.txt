@@ -1,0 +1,1 @@
+{"recordCount":1,"truncated":false,"metadata":{"revision":"5lohf4","target":{"id":"wb/173ww2","beforeLines":0,"afterLines":0},"kind":{"requested":"table","tokens":["table"]},"include":{"requested":"values,formulas","tokens":["values","formulas"]},"exclude":{"tokens":[]},"notices":[]}}

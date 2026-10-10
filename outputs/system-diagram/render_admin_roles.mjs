@@ -1,0 +1,1 @@
+import sharp from 'sharp';const p=process.argv[2];await sharp(p+'/use_case_diagram_admin_roles.svg').resize(3600).png().toFile(p+'/use_case_diagram_admin_roles.png');

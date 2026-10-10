@@ -1,0 +1,487 @@
+[
+  {
+    "bookmark": "nav_37",
+    "label": "Title Page",
+    "target": "AN INTELLIGENT QUEUING MANAGEMENT SYSTEM WITH"
+  },
+  {
+    "bookmark": "nav_38",
+    "label": "Certificate of Readiness",
+    "target": "CERTIFICATE OF READINESS"
+  },
+  {
+    "bookmark": "nav_39",
+    "label": "Table of Contents",
+    "target": "TABLE OF CONTENTS"
+  },
+  {
+    "bookmark": "nav_40",
+    "label": "List of Figures",
+    "target": "LIST OF FIGURES"
+  },
+  {
+    "bookmark": "nav_41",
+    "label": "List of Tables",
+    "target": "LIST OF TABLES"
+  },
+  {
+    "bookmark": "nav_43",
+    "label": "Chapter 1. INTRODUCTION",
+    "target": "Chapter 1"
+  },
+  {
+    "bookmark": "nav_44",
+    "label": "Project Context",
+    "target": "Project Context"
+  },
+  {
+    "bookmark": "nav_45",
+    "label": "Purpose and Description",
+    "target": "Purpose and Description"
+  },
+  {
+    "bookmark": "nav_46",
+    "label": "Objectives of the Study",
+    "target": "Objectives of the Study"
+  },
+  {
+    "bookmark": "nav_47",
+    "label": "Significance of the Study",
+    "target": "Significance of the Study"
+  },
+  {
+    "bookmark": "nav_48",
+    "label": "Scope and Limitation",
+    "target": "Scope and Limitation"
+  },
+  {
+    "bookmark": "nav_50",
+    "label": "Chapter 2. REVIEW OF RELATED LITERATURE AND SYSTEMS",
+    "target": "Chapter 2"
+  },
+  {
+    "bookmark": "nav_51",
+    "label": "Queuing Management Systems in Administrative Services",
+    "target": "Queuing Management Systems in Administrative Services"
+  },
+  {
+    "bookmark": "nav_52",
+    "label": "Kiosk-Based Queuing Systems",
+    "target": "Kiosk-Based Queuing Systems"
+  },
+  {
+    "bookmark": "nav_53",
+    "label": "Related Systems",
+    "target": "Related Systems"
+  },
+  {
+    "bookmark": "nav_54",
+    "label": "Synthesis",
+    "target": "Synthesis"
+  },
+  {
+    "bookmark": "nav_55",
+    "label": "Conceptual Model of the Study",
+    "target": "Conceptual Model Of The Study"
+  },
+  {
+    "bookmark": "nav_56",
+    "label": "Definition of Terms",
+    "target": "Definition of Terms"
+  },
+  {
+    "bookmark": "nav_58",
+    "label": "Chapter 3. DESIGN AND METHODOLOGY",
+    "target": "Chapter 3"
+  },
+  {
+    "bookmark": "nav_59",
+    "label": "Requirements Analysis",
+    "target": "Requirements Analysis"
+  },
+  {
+    "bookmark": "nav_60",
+    "label": "Requirements Documentation",
+    "target": "Requirements Documentation"
+  },
+  {
+    "bookmark": "nav_61",
+    "label": "Design of Software, Systems, Product and/or Process",
+    "target": "Design of Software, Systems, Product and/or Process User Interface Design"
+  },
+  {
+    "bookmark": "nav_62",
+    "label": "Testing Procedure",
+    "target": "Testing Procedure"
+  },
+  {
+    "bookmark": "nav_63",
+    "label": "Evaluation Procedure",
+    "target": "Evaluation Procedure"
+  },
+  {
+    "bookmark": "nav_64",
+    "label": "Chapter 4. RESULTS AND DISCUSSION",
+    "target": "Chapter 4"
+  },
+  {
+    "bookmark": "nav_65",
+    "label": "Project Description",
+    "target": "Project Description"
+  },
+  {
+    "bookmark": "nav_66",
+    "label": "Project Structure",
+    "target": "Project Structure"
+  },
+  {
+    "bookmark": "nav_67",
+    "label": "Capabilities and Limitations",
+    "target": "Capabilities And Limitations"
+  },
+  {
+    "bookmark": "nav_68",
+    "label": "Evaluation Result",
+    "target": "Evaluation Result"
+  },
+  {
+    "bookmark": "nav_69",
+    "label": "Chapter 5. CONCLUSIONS AND RECOMMENDATIONS",
+    "target": "Chapter 5"
+  },
+  {
+    "bookmark": "nav_70",
+    "label": "Summary of Findings",
+    "target": "Summary of Findings"
+  },
+  {
+    "bookmark": "nav_71",
+    "label": "Conclusions",
+    "target": "Conclusions"
+  },
+  {
+    "bookmark": "nav_72",
+    "label": "Recommendations",
+    "target": "Recommendations"
+  },
+  {
+    "bookmark": "nav_73",
+    "label": "REFERENCES",
+    "target": "References:"
+  },
+  {
+    "bookmark": "nav_74",
+    "label": "APPENDICES",
+    "target": "APPENDICES"
+  },
+  {
+    "bookmark": "appendix_0",
+    "label": "Appendix A - Communications and Transcript of Interviews",
+    "target": "Appendix A"
+  },
+  {
+    "bookmark": "appendix_1",
+    "label": "Appendix B - Language Editor Certification",
+    "target": "Appendix B"
+  },
+  {
+    "bookmark": "appendix_2",
+    "label": "Appendix C - AI Declaration",
+    "target": "Appendix C"
+  },
+  {
+    "bookmark": "appendix_3",
+    "label": "Appendix D - IMRD Journal",
+    "target": "Appendix D"
+  },
+  {
+    "bookmark": "appendix_4",
+    "label": "Appendix E - Evaluation Tool (ISO Software Criteria)",
+    "target": "Appendix E"
+  },
+  {
+    "bookmark": "appendix_5",
+    "label": "Appendix F - Alpha Testing Form For Developers",
+    "target": "Appendix F"
+  },
+  {
+    "bookmark": "appendix_6",
+    "label": "Appendix G - Beta Testing Form For IT Professionals and Department Users",
+    "target": "Appendix G"
+  },
+  {
+    "bookmark": "appendix_7",
+    "label": "Appendix H - Progress Reports",
+    "target": "Appendix H "
+  },
+  {
+    "bookmark": "appendix_8",
+    "label": "Appendix I - User\u2019s Guide",
+    "target": "Appendix I "
+  },
+  {
+    "bookmark": "appendix_9",
+    "label": "Appendix J - Test Results",
+    "target": "Appendix J "
+  },
+  {
+    "bookmark": "appendix_10",
+    "label": "Appendix K - Photo Ops (Data Gathering, Investigation, Evaluation)",
+    "target": "Appendix K"
+  },
+  {
+    "bookmark": "appendix_11",
+    "label": "Appendix L - Curriculum Vitae",
+    "target": "Appendix L"
+  },
+  {
+    "bookmark": "figure_1",
+    "label": "Figure 1. Automated Enrollment Queueing System Interface",
+    "target": "Figure 1. Automated Enrollment Queueing System Interface"
+  },
+  {
+    "bookmark": "figure_2",
+    "label": "Figure 2. Laguna Medical Center Queuing Management System Interface",
+    "target": "Figure 2. Laguna Medical Center Queuing Management System Interface"
+  },
+  {
+    "bookmark": "figure_3",
+    "label": "Figure 3. Water Level Monitoring System Dashboard",
+    "target": "Figure 3. Water Level Monitoring System Dashboard"
+  },
+  {
+    "bookmark": "figure_4",
+    "label": "Figure 4. Kiosk Device User Interface for Cashier Queuing System",
+    "target": "Figure 4. Kiosk Device User Interface for Cashier Queuing System"
+  },
+  {
+    "bookmark": "figure_5",
+    "label": "Figure 5. Jeepney Terminal Queuing System Queue Page Interface",
+    "target": "Figure 5. Jeepney Terminal Queuing System Queue Page Interface"
+  },
+  {
+    "bookmark": "figure_6",
+    "label": "Figure 6. Smart Queue Management System Interfaces",
+    "target": "Figure 6. Smart Queue Management System Interfaces"
+  },
+  {
+    "bookmark": "figure_7",
+    "label": "Figure 7. Cloud-Based Intelligent Queue Management System Interfaces",
+    "target": "Figure 7. Cloud-Based Intelligent Queue Management System Interfaces"
+  },
+  {
+    "bookmark": "figure_8",
+    "label": "Figure 8. NoQ Real-Time Queue Management System Interface",
+    "target": "Figure 8. NoQ Real-Time Queue Management System Interface"
+  },
+  {
+    "bookmark": "figure_9",
+    "label": "Figure 9. Intelligent Queue Management System Interfaces and Physical Setup",
+    "target": "Figure 9. Intelligent Queue Management System Interfaces and Physical Setup"
+  },
+  {
+    "bookmark": "figure_10",
+    "label": "Figure 10. GovQueue System Interfaces (Citizen, Staff, and Admin Modules)",
+    "target": "Figure 10. GovQueue System Interfaces (Citizen, Staff, and Admin Modules)"
+  },
+  {
+    "bookmark": "figure_11",
+    "label": "Figure 11. Conceptual Model of the Study",
+    "target": "Figure 11. Conceptual Model of the Study"
+  },
+  {
+    "bookmark": "figure_12",
+    "label": "Figure 12. Agile Methodology of the Proposed System",
+    "target": "Figure 12. Agile Methodology of the Proposed System"
+  },
+  {
+    "bookmark": "figure_13",
+    "label": "Figure 13. System Block Diagram of the Proposed System",
+    "target": "Figure 13. System Block Diagram of the Proposed System"
+  },
+  {
+    "bookmark": "figure_14",
+    "label": "Figure 14. Context Diagram of the Proposed System",
+    "target": "Figure 14. Context Diagram of the Proposed System"
+  },
+  {
+    "bookmark": "figure_15",
+    "label": "Figure 15. Data Flow Diagram of the Proposed System",
+    "target": "Figure 15. Data Flow Diagram of the Proposed System"
+  },
+  {
+    "bookmark": "figure_16",
+    "label": "Figure 16. Use Case Diagram of the Proposed System",
+    "target": "Figure 16. Use Case Diagram of the Proposed System"
+  },
+  {
+    "bookmark": "figure_17",
+    "label": "Figure 17. Kiosk Interface Screen",
+    "target": "Figure 17. Kiosk Interface Screen"
+  },
+  {
+    "bookmark": "figure_18",
+    "label": "Figure 18. Student Number Input Screen",
+    "target": "Figure 18. Student Number Input Screen"
+  },
+  {
+    "bookmark": "figure_19",
+    "label": "Figure 19. Service Selection Screen (Cashier and Registrar)",
+    "target": "Figure 19. Service Selection Screen (Cashier and Registrar)"
+  },
+  {
+    "bookmark": "figure_20",
+    "label": "Figure 20. Regular and Priority Selection Screen",
+    "target": "Figure 20. Regular and Priority Selection Screen"
+  },
+  {
+    "bookmark": "figure_21",
+    "label": "Figure 21. Staff Login Interface",
+    "target": "Figure 21. Staff Login Interface"
+  },
+  {
+    "bookmark": "figure_22",
+    "label": "Figure 22. Cashier Panel \u2013 Ready to Serve State",
+    "target": "Figure 22. Cashier Panel \u2013 Ready to Serve State"
+  },
+  {
+    "bookmark": "figure_23",
+    "label": "Figure 23. Cashier Panel \u2013 Serving Ticket State",
+    "target": "Figure 23. Cashier Panel \u2013 Serving Ticket State"
+  },
+  {
+    "bookmark": "figure_24",
+    "label": "Figure 24. Registrar Panel \u2013 Ready to Serve State",
+    "target": "Figure 24. Registrar Panel \u2013 Ready to Serve State"
+  },
+  {
+    "bookmark": "figure_25",
+    "label": "Figure 25. Registrar Panel \u2013 Serving Ticket State",
+    "target": "Figure 25. Registrar Panel \u2013 Serving Ticket State"
+  },
+  {
+    "bookmark": "figure_26",
+    "label": "Figure 26. ITM Staff Panel",
+    "target": "Figure 26. ITM Staff Panel"
+  },
+  {
+    "bookmark": "figure_27",
+    "label": "Figure 27. Staff Mini View",
+    "target": "Figure 27. Staff Mini View"
+  },
+  {
+    "bookmark": "figure_28",
+    "label": "Figure 28. Window Selection for Priority Processing",
+    "target": "Figure 28. Window Selection for Priority Processing"
+  },
+  {
+    "bookmark": "figure_29",
+    "label": "Figure 29. Security Authorization (PIN Entry Screen)",
+    "target": "Figure 29. Security Authorization (PIN Entry Screen)"
+  },
+  {
+    "bookmark": "figure_30",
+    "label": "Figure 30. Generated Queue Ticket Confirmation",
+    "target": "Figure 30. Generated Queue Ticket Confirmation"
+  },
+  {
+    "bookmark": "figure_31",
+    "label": "Figure 31. Admin Dashboard",
+    "target": "Figure 31. Admin Dashboard"
+  },
+  {
+    "bookmark": "figure_32",
+    "label": "Figure 32. Admin  Queue Monitoring Interface",
+    "target": "Figure 32. Admin  Queue Monitoring Interface"
+  },
+  {
+    "bookmark": "figure_33",
+    "label": "Figure 33. Analytics Interface",
+    "target": "Figure 33. Analytics Interface"
+  },
+  {
+    "bookmark": "figure_34",
+    "label": "Figure 34. Reports Interface",
+    "target": "Figure 34. Reports Interface"
+  },
+  {
+    "bookmark": "figure_35",
+    "label": "Figure 35. Staff Management Interface",
+    "target": "Figure 35. Staff Management Interface"
+  },
+  {
+    "bookmark": "figure_36",
+    "label": "Figure 36. Display Board Settings Interface",
+    "target": "Figure 36. Display Board Settings Interface"
+  },
+  {
+    "bookmark": "figure_37",
+    "label": "Figure 37. Activity Logs Interface",
+    "target": "Figure 37. Activity Logs Interface"
+  },
+  {
+    "bookmark": "figure_38",
+    "label": "Figure 38. Queue Display Board (Now Serving & Waiting List)",
+    "target": "Figure 38. Queue Display Board (Now Serving & Waiting List)"
+  },
+  {
+    "bookmark": "figure_39",
+    "label": "Figure 39. Network Infrastructure Diagram",
+    "target": "Figure 39. Network Infrastructure Diagram"
+  },
+  {
+    "bookmark": "figure_40",
+    "label": "Figure 40. Entity Relationship Diagram of the Proposed System",
+    "target": "Figure 40. Entity Relationship Diagram of the Proposed System"
+  },
+  {
+    "bookmark": "figure_41",
+    "label": "Figure 41. System Demonstration and Evaluation with the Cashier Office",
+    "target": "Figure 41. System Demonstration and Evaluation with the Cashier Office"
+  },
+  {
+    "bookmark": "figure_42",
+    "label": "Figure 42. System Demonstration and Evaluation with the Registrar Office",
+    "target": "Figure 42. System Demonstration and Evaluation with the Registrar Office"
+  },
+  {
+    "bookmark": "figure_43",
+    "label": "Figure 43. System Demonstration & Evaluation with the ITM Department",
+    "target": "Figure 43. System Demonstration & Evaluation with the ITM Department"
+  },
+  {
+    "bookmark": "figure_44",
+    "label": "Figure 44. System Demonstration and Evaluation Conducted with IT Experts and Students",
+    "target": "Figure 44. System Demonstration and Evaluation Conducted with IT Experts and Students"
+  },
+  {
+    "bookmark": "table_1",
+    "label": "Table 1. Testing Results of System Modules",
+    "target": "Table 1. Testing Results of System Modules"
+  },
+  {
+    "bookmark": "table_2",
+    "label": "Table 2. Distribution of Respondents of the Study",
+    "target": "Table 2. Distribution of Respondents of the Study"
+  },
+  {
+    "bookmark": "table_3",
+    "label": "Table 3. Five-Point Rating Scale and Verbal Interpretation",
+    "target": "Table 3. Five-Point Rating Scale and Verbal Interpretation"
+  },
+  {
+    "bookmark": "table_4",
+    "label": "Table 4. Summary of Software Evaluation Results by Client Respondents",
+    "target": "Table 4. Summary of Software Evaluation Results by Client Respondents"
+  },
+  {
+    "bookmark": "table_5",
+    "label": "Table 5. Summary of Software Evaluation Results by IT Experts",
+    "target": "Table 5. Summary of Software Evaluation Results by IT Experts"
+  },
+  {
+    "bookmark": "table_6",
+    "label": "Table 6. Overall Software Evaluation Results Based on ISO/IEC 25010:2011 Quality Characteristics",
+    "target": "Table 6. Overall Software Evaluation Results Based on ISO/IEC 25010:2011 Quality Characteristics"
+  }
+]

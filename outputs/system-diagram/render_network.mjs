@@ -1,0 +1,1 @@
+import sharp from 'sharp';const p=process.argv[2];await sharp(p+'/network_infrastructure_diagram.svg').resize(3200).png().toFile(p+'/network_infrastructure_diagram.png');

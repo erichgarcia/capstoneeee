@@ -1,0 +1,1 @@
+import sharp from 'sharp';import fs from 'node:fs/promises';const p=process.argv[2];await sharp(p+'/system_block_diagram.svg').resize(3200).png().toFile(p+'/system_block_diagram.png');

@@ -1,0 +1,1 @@
+import fs from 'node:fs/promises'; import sharp from 'sharp'; const p=process.argv[2]; const b=await sharp(p).metadata(); await sharp(p).extract({left:Math.round(b.width*.74),top:Math.round(b.height*.42),width:Math.round(b.width*.25),height:Math.round(b.height*.51)}).resize({width:650}).toFile(process.argv[3]);

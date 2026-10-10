@@ -1,0 +1,1298 @@
+0	[]	
+1	[]	AN INTELLIGENT QUEUING MANAGEMENT SYSTEM WITH
+2	[]	 INTEGRATED SERVICE PERFORMANCE ANALYTICS 
+3	[]	AND KPI MONITORING IN LYCEUM OF ALABANG
+4	[]	
+5	[]	
+6	[]	A Capstone Project
+7	[]	Presented to the Faculty of the
+8	[]	COLLEGE OF COMPUTER STUDIES
+9	[]	Lyceum of Alabang
+10	[]	
+11	[]	In Partial Fulfillment
+12	[]	of the Requirements for the Bachelor of Science In Information Technology
+13	[]	
+14	[]	by
+15	[]	
+16	[]	Aquino, Lavinia Faye G.
+17	[]	Garcia, Erich Mae A.
+18	[]	Nacario, Zhildjian Kurt D.
+19	[]	Obeal, Rydner S.
+20	[]	Vilda, Gerry C.
+21	[]	
+22	[]	
+23	[]	
+24	[]	
+25	[]	2026
+26	[]	
+27	[]	CERTIFICATE OF READINESS
+28	[]	
+29	[]	This Capstone Project titled “An Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum Of Alabang” is prepared and submitted by Aquino, Lavinia Faye G., Garcia, Erich Mae A., Nacario, Zhildjian Kurt D., Obeal, Rydner S., and Vilda, Gerry C. in partial fulfillment  of the requirements of the degree of BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY has been adequately prepared and submitted by the researchers and is hereby endorsed by the undersigned for oral examination.
+30	[]	
+31	[]	
+32	[]	
+33	[]	JULIE L. PECHO
+34	[]	Technical Adviser
+35	[]	TABLE OF CONTENTS
+36	[]	Preliminaries
+37	[]	Title Pagei
+38	[]	Certificate of Readinessii
+39	[]	Table of Contentsiii
+40	[]	List of Figuresv
+41	[]	List of Tablesvii
+42	[]	
+43	[]	Chapter 1. INTRODUCTION1
+44	[]	Project Context1
+45	[]	Purpose and Description3
+46	[]	Objectives of the Study4
+47	[]	Significance of the Study6
+48	[]	Scope and Limitations8
+49	[]	
+50	[]	Chapter 2. REVIEW OF RELATED LITERATURE AND SYSTEMS10
+51	[]	Queuing Management Systems in Administrative Services10
+52	[]	Kiosk-Based Queuing Systems13
+53	[]	Related Systems15
+54	[]	Synthesis25
+55	[]	Conceptual Model of the Study27
+56	[]	Definition of Terms29
+57	[]	
+58	[]	Chapter 3. DESIGN AND METHODOLOGY33
+59	[]	Requirements Analysis36
+60	[]	Requirements Documentation46
+61	[]	Design Of Software, Systems, Product and/or Process48
+62	[]	Testing Procedure69
+63	[]	Evaluation Procedure74
+64	[]	Chapter 4. RESULTS AND DISCUSSION80
+65	[]	Project Description81
+66	[]	Project Structure 82
+67	[]	Capabilities and Limitations 84
+68	[]	Evaluation Results85
+69	[]	Chapter 5. CONCLUSIONS AND RECOMMENDATIONS88
+70	[]	Summary of Findings88
+71	[]	Conclusions92
+72	[]	Recommendations94
+73	[]	REFERENCES76
+74	[]	APPENDICES101
+75	[]	Appendix A — Communications and Transcript of Interviews101
+76	[]	Appendix D — IMRD Journal106
+77	[]	Appendix E — Evaluation Tool114
+78	[]	Appendix L — Photo Ops118
+79	[]	LIST OF FIGURES
+80	[]	
+81	[]	
+82	[]	
+83	[]	NoTitlePage
+84	[]	1Automated Enrollment Queueing System Interface16
+85	[]	2Laguna Medical Center Queuing Management System Interface17
+86	[]	3Water Level Monitoring System Dashboard18
+87	[]	4Kiosk Device User Interface for Cashier Queuing System19
+88	[]	5Jeepney Terminal Queuing System Queue Page Interface20
+89	[]	6Smart Queue Management System Interfaces21
+90	[]	7Cloud-Based Intelligent Queue Management System Interfaces22
+91	[]	8NoQ Real-Time Queue Management System Interface23
+92	[]	9Intelligent Queue Management System Interfaces and Physical Setup24
+93	[]	10GovQueue System Interfaces (Citizen, Staff, and Admin Modules)25
+94	[]	11Conceptual Model of the Study29
+95	[]	12Agile Methodology of the Proposed System36
+96	[]	13System Block Diagram of the Proposed System45
+97	[]	14Context Diagram of the Proposed System46
+98	[]	15Data Flow Diagram of the Proposed System47
+99	[]	16Use Case Diagram of the Proposed System48
+100	[]	17Kiosk Interface Screen51
+101	[]	18Student Number Input Screen52
+102	[]	19Service Selection Screen (Cashier and Registrar)53
+103	[]	20Regular and Priority Selection Screen53
+104	[]	21Staff Login Interface54
+105	[]	22Cashier Panel – Ready to Serve State55
+106	[]	23Cashier Panel – Serving Ticket State55
+107	[]	24Registrar Panel – Ready to Serve State56
+108	[]	25Registrar Panel – Serving Ticket State57
+109	[]	26ITM Staff Panel58
+110	[]	27Staff Mini View59
+111	[]	28Window Selection for Priority Processing59
+112	[]	29Security Authorization (PIN Entry Screen)60
+113	[]	30Generated Queue Ticket Confirmation60
+114	[]	31Admin Dashboard61
+115	[]	32Administrative Queue Monitoring Interface62
+116	[]	33Analytics Interface63
+117	[]	34Reports Interface64
+118	[]	35Staff Management Interface65
+119	[]	36Display Board Settings Interface65
+120	[]	37Activity Logs Interface66
+121	[]	38Queue Display Board (Now Serving & Waiting List)67
+122	[]	39Network Infrastructure Diagram68
+123	[]	40Entity Relationship Diagram of the Proposed System71
+124	[]	
+125	[]	
+126	[]	
+127	[]	
+128	[]	
+129	[]	
+130	[]	
+131	[]	LIST OF TABLES
+132	[]	
+133	[]	NoTitlePage
+134	[]	1Testing Results of System Modules77
+135	[]	2Distribution of Respondents of the Study79
+136	[]	
+137	[]	
+138	[]	Chapter 1
+139	[]	INTRODUCTION
+140	[]	Project Context
+141	[]	          Effective administrative service delivery is essential to maintaining service quality and institutional efficiency in educational institutions. As the volume of client transactions increases, administrative offices must process requests while maintaining an orderly, transparent, and fair service flow. Manual queuing procedures can contribute to long waiting times, congestion, unclear service order, and difficulty in monitoring service performance.
+142	[]	          At Lyceum of Alabang, the Registrar and Finance Offices handle transactions that require clients to wait for available service personnel. To improve this process, the proposed system establishes structured Regular and Priority ticket workflows. Regular tickets follow the standard queue sequence, while Priority tickets are intended for verified qualified clients, including Persons with Disabilities (PWDs), senior citizens, pregnant women, and other eligible individuals. 
+143	[]	          To address these issues,  This study proposes to development of an Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang. The system uses a kiosk to support client identification or guest processing, department and transaction selection, Regular or Priority ticket selection, and queue-ticket generation. A digital display board presents queue information and supports audio-visual announcements so that clients can monitor the progress of service without relying solely on a physical line. Priority processing includes a controlled security authorization process. Designated security personnel verify qualified clients and authorize Priority ticket requests through a PIN-protected interface. This mechanism helps prevent unauthorized use of priority processing while maintaining a clear distinction between Regular and Priority tickets.
+144	[]	          The system supports Registrar, Cashier, ITM, Security Personnel, Administrator, and Client functions. Registrar and Cashier staff manage their assigned queues and service windows, while ITM staff serve as backup personnel when Cashier or Registrar staff are unavailable. As backup staff, ITM personnel can perform the necessary staff functions of the unavailable office and process its Regular and Priority tickets. Staff can call the next eligible ticket, complete transactions, and mark tickets as skipped or no-show. The system also supports service-window status and assignment information that is synchronized with the centralized database. For administrators, the system provides a dashboard, queue monitoring, analytics, reports, staff management, display-board settings, and activity logs. Service-performance information includes queue volume, waiting time, service time, completion rate, turnaround time, peak periods, staff performance, and service-window performance. These functions allow queue activity to be monitored as operational data and help administrators evaluate service delivery using recorded system transactions.
+145	[]	The system also supports four departments, namely Accounting/Cashier, Registrar, ITM, and Admission. It provides a Main Admin account that oversees overall system operations and four separate Department Head Admin accounts, each assigned to a specific department. To balance queue processing, the system implements a 4 Priority to 2 Regular serving sequence, helping prevent excessive delays among Regular clients. Furthermore, the system integrates Predicted Waiting Time, Peak Hour Prediction, and Smart Queue Congestion Risk to support administrative monitoring and decision-making.
+146	[]	
+147	[]	Purpose and Description
+148	[]	          The purpose of this study is to design and develop an Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring that improves administrative queuing at Lyceum of Alabang. The system supports Accounting/Cashier, Registrar, ITM, and Admission through automated Regular and Priority ticket processing, department-based administration, and intelligent queue monitoring to promote organized and measurable service operations.
+149	[]	          The kiosk serves as the primary client-facing interface. Clients enter the required information or proceed as guests, select the appropriate department and transaction, and choose the applicable Regular or Priority workflow. Priority requests require verification and PIN-based authorization by designated security personnel before a Priority ticket is generated. The system then produces a queue ticket containing the information required for service routing and queue tracking.
+150	[]	The system supports Administrator, Staff, Security Personnel, and Client functions. 
+151	[]	          Administrators manage monitoring, analytics, reports, staff accounts, display settings, service-window information, and activity records. Registrar and Cashier staff process Regular and Priority queue transactions assigned to their departments, while ITM staff serve as backup personnel when Cashier or Registrar staff are unavailable and can perform the necessary staff functions of the unavailable office. Security personnel verify eligibility for Priority processing, and clients follow queue progress through the digital display board and audio announcements. By storing queue records, assignments, statuses, and service timestamps in a centralized database, the system provides consistent information across supported interfaces. The analytics and reporting modules use these records to summarize queue activity and service-performance indicators for selected periods and departments.
+152	[]	The Main Admin manages and monitors the overall system, while the four Department Head Admins have similar administrative functions restricted to their assigned departments. The system also incorporates a 4 Priority to 2 Regular serving sequence and three intelligent behaviors that provide waiting-time estimates, peak-hour forecasts, and queue congestion risk assessments.
+153	[]	
+154	[]	Objectives of the Study
+155	[]	          The general objective of this study is to develop and implement an Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang that improves service delivery through automated Regular and Priority ticket processing, real-time queue monitoring, service-window management, role-based system access, and performance analytics.
+156	[]	The specific objectives of the study are to:
+157	['ListParagraph']	Analyze the existing queuing process in the Registrar and Finance Offices to identify concerns such as long waiting times, congestion, unclear service order, and inefficient queue handling.
+158	['ListParagraph']	Design the system processes, database structure, user interactions, and data flow using appropriate system-design models, including Unified Modeling Language (UML), Data Flow Diagrams (DFD), and an Entity Relationship Diagram (ERD).
+159	['ListParagraph']	Develop the system using React for the front end, PHP for the back end, and MySQL for the database to support queue-ticket issuance, transaction selection, user-role management, service-window assignments, and persistent queue records.
+160	['ListParagraph']	Implement kiosk-based client processing for department and transaction selection, Regular and Priority ticket generation, guest processing, and printed queue-ticket confirmation.
+161	['ListParagraph']	Implement a PIN-based security authorization mechanism that allows designated security personnel to verify eligible clients before Priority tickets are issued.
+162	['ListParagraph']	Provide staff operations for Registrar and Cashier personnel, with ITM staff serving as backup personnel when Cashier or Registrar staff are unavailable, including queue viewing, processing Regular and Priority tickets, calling the next eligible ticket, completing transactions, and marking tickets as skipped or no-show.
+163	['ListParagraph']	Enable ITM staff to act as backup personnel when Cashier or Registrar staff are unavailable so that Regular and Priority ticket processing can continue without unnecessary service interruption.
+164	['ListParagraph']	Provide synchronized queue, staff, service-window, and administrative information across the kiosk, staff panels, display board, and administrative modules.
+165	['ListParagraph']	Provide administrative analytics and reporting for queue volume, waiting time, service time, turnaround time, completion rate, peak hours, busiest days, staff performance, and service-window performance.
+166	['ListParagraph']	Support the queue operations of Accounting/Cashier, Registrar, ITM, and Admission through department-based ticket processing and monitoring.
+167	['ListParagraph']	Implement a 4 Priority to 2 Regular serving sequence to maintain priority accommodation while preventing excessive delays among Regular clients.
+168	['ListParagraph']	Establish separate Main Admin and Department Head Admin accounts with appropriate access permissions and integrate Predicted Waiting Time, Peak Hour Prediction, and Smart Queue Congestion Risk for intelligent queue monitoring.
+169	['ListParagraph']	Provide configurable digital-display features for school branding, visible service windows, layout, announcements, voice settings, animation, and queue-status information.
+170	['ListParagraph']	Maintain accurate queue and activity records using database-based assignments, validated timestamps, and appropriate handling of waiting, serving, completed, skipped/no-show, and cancelled records.
+171	['ListParagraph']	Test the system through Alpha Testing and Beta Testing to assess functionality, usability, and reliability.
+172	['ListParagraph']	Evaluate the system using applicable ISO/IEC 25010 quality characteristics and user feedback.
+173	['ListParagraph']	
+174	[]	Significance of the Study
+175	[]	          This study emphasizes the value of an intelligent queue management system that combines Regular and Priority ticket processing with centralized monitoring and service-performance analytics. The following stakeholders are expected to benefit from the proposed system.
+176	[]	          For the Main Admin, the system provides centralized access to the operations, monitoring, analytics, reports, and performance information of all four departments. The three intelligent behaviors also provide estimates and assessments that support overall administrative decision-making.
+177	[]	For the Department Head Admins, the system provides department-specific administrative functions for Accounting/Cashier, Registrar, ITM, and Admission. Each Department Head Admin can monitor queue activities, review analytics, and manage permitted operations within the assigned department without accessing other departments’ information.
+178	[]	          For Registrar staff, the system provides an organized interface for handling Regular and Priority queue transactions. Staff can view waiting tickets, identify the assigned service window, call the next eligible ticket, complete a transaction, and mark a ticket as skipped or no-show.
+179	[]	          For Cashier staff, the system provides structured Regular and Priority ticket handling for payment-related transactions. The staff panel reduces the need to manage physical lines manually and provides current queue information for service processing.
+180	[]	          For ITM staff, the system provides backup access to the necessary staff functions when Cashier or Registrar staff are unavailable. This allows ITM personnel to process the Regular and Priority tickets of the unavailable office and helps maintain continuous queue operations.
+181	[]	For Admission staff, the system provides an organized interface for processing admission-related queue transactions, allowing personnel to monitor waiting clients and manage their assigned service operations.
+182	[]	          For security personnel, the system provides a PIN-protected authorization process for Priority tickets. Security personnel verify qualified clients before priority processing is authorized, helping ensure that Priority tickets are issued only to eligible individuals.
+183	[]	          For clients, the system provides a clearer queuing process through kiosk-based ticket generation, Regular and Priority workflows, printed queue information, and queue updates through the digital display board and audio announcements.
+184	[]	          For future researchers, the study may serve as a reference for queue management systems that combine kiosk-based Regular and Priority ticketing, backup staff support, service-window management, real-time synchronization, administrative monitoring, and performance analytics.
+185	[]	Scope and Limitation
+186	[]	          This study focuses on the development of an Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring for four departments of Lyceum of Alabang: Accounting/Cashier, Registrar, ITM, and Admission. The system supports kiosk-based Regular and Priority ticket generation, security authorization, staff queue processing, and a 4 Priority to 2 Regular serving sequence. It also provides a Main Admin account for overall system management, four Department Head Admin accounts for department-specific administration, and three intelligent behaviors for queue monitoring and operational assessment.
+187	[]	          Within the defined scope, the system supports client identification or guest processing, department and transaction selection, Regular and Priority queue-ticket generation, Registrar and Cashier queue handling, ITM backup staff access when Cashier or Registrar staff are unavailable, staff operations, service-window management, queue monitoring, audio-visual announcements, a configurable digital display board, administrative monitoring, analytics, reports, staff management, and activity logging. The system stores queue records, service statuses, staff and service-window assignments, and relevant timestamps in a centralized MySQL database. These records support synchronized information across the kiosk, staff interfaces, display board, and administrative modules and provide the basis for supported service-performance calculations.
+188	['p1']	          The system is limited to the configured offices, service windows, users, transactions, and ITM function included in the capstone implementation. It is designed for internal institutional queue management and does not provide external online queue reservations, remote appointment booking, or integration with institutional systems outside the defined project scope. The intelligent behaviors depend on available queue records and historical service data. Predictions and congestion assessments may vary depending on queue conditions and the amount of recorded information. Department Head Admin accounts are also restricted to their assigned departments, while the Main Admin maintains overall administrative access. Performance measures depend on valid records captured by the system; information that is not recorded by the system is not assumed or reconstructed.
+189	[]	
+190	[]	
+191	[]	
+192	[]	
+193	[]	
+194	[]	
+195	[]	
+196	[]	
+197	[]	
+198	[]	
+199	[]	
+200	[]	
+201	[]	
+202	[]	Chapter 2
+203	[]	REVIEW OF RELATED LITERATURE AND SYSTEMS
+204	[]	
+205	[]	          This chapter presents a review of related literature and studies that serve as the foundation of the proposed research. It includes various concepts, previous studies, and existing systems relevant to queuing management, kiosk-based technologies, and service performance monitoring.
+206	[]	The purpose of this chapter is to provide a better understanding of the current practices and identify gaps that justify the development of the proposed system. These reviewed materials support the design and implementation of An Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang. This chapter includes the conceptual framework of the study, which illustrates the relationship between the input, process, and output of the system. It also presents the operational definition of terms used throughout the study to ensure clarity and consistency.
+207	[]	
+208	[]	Related Literature
+209	[]	Queuing Management Systems in Administrative Services
+210	['ListParagraph']	Queuing processes in registrar, finance, and student service offices
+211	[]	          Queuing processes in registrar, finance, and student service offices are often characterized by high volumes of users, especially during peak periods such as enrollment. A study found that students may wait for several hours before being served, indicating inefficiencies in manual queuing systems [1]. This shows that manual queuing systems in academic offices are inefficient, especially during peak periods such as enrollment. In relation to An Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang, this highlights the need for a system that can manage queues more effectively and reduce waiting time. The proposed system addresses this issue by introducing automated ticketing, real-time monitoring, and organized queue flow, making An Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang a suitable solution to improve service efficiency and reduce delays.
+212	[]	
+213	['ListParagraph']	Causes of long waiting times in administrative queues
+214	[]	          Prolonged waiting times in service environments, particularly in government offices and universities, can lead to frustration, overcrowding, and dissatisfaction among users [2]. One of the root causes of long waiting times is the inability of existing systems to handle peak hours efficiently, where the demand for services increases drastically. Without an automated system in place, service delivery becomes slow, affecting the overall efficiency of the institution. The study highlights the need for a more efficient queuing solution to alleviate the burden on staff and improve the overall user experience. It is relevant to the proposed system because it shows that automation plays a critical role in reducing waiting time. By implementing kiosks and automated queue ticketing, the proposed system addresses this problem, ensuring that the flow of customers is streamlined and waiting time is reduced.
+215	[]	
+216	['ListParagraph']	Effects of queue jumping and disorganized service flow
+217	[]	          Smart queue management systems are designed to improve customer flow and service quality by providing real-time data on customer wait times and optimizing service delivery [3]. These systems integrate technology such as real-time monitoring, digital ticketing, and data analytics to enhance the queuing process. The introduction of smart systems in high-traffic areas like hospitals and universities has led to improvements in customer satisfaction and service efficiency. This study supports the idea of using technology in queuing systems, which aligns perfectly with the goals of the proposed Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum Of Alabang. By incorporating digital displays, automated ticket generation, and real-time updates, the proposed system can provide a similar improvement in queuing efficiency. It helps to ensure that users are informed of their queue status, preventing delays and creating a better service environment for both students and staff.
+218	[]	
+219	[]	
+220	[]	
+221	[]	
+222	[]	
+223	[]	Kiosk-Based Queuing Systems
+224	['ListParagraph']	Role of kiosks as primary physical queue interfaces
+225	[]	          A kiosk-based queuing system provides features such as dynamic queue display, automated ticket generation, and high usability for users [4]. This shows that kiosks play an important role as the main interface between users and the system. In relation to An Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang, kiosks allow students to easily select services and receive queue numbers without manual assistance. This supports the proposed system by improving accessibility, reducing human error, and ensuring a more efficient queuing process, making An Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang more effective in handling service requests.
+226	[]	
+227	['ListParagraph']	User interaction and accessibility of queuing kiosks
+228	[]	          Studies show that kiosk usability and user experience can be measured through factors such as practicality, reliability, convenience, and interaction [5]. This indicates that a well-designed kiosk system must focus on user experience to ensure effectiveness and acceptance. In relation to An Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang, this highlights the importance of designing a simple, user-friendly interface for students and staff.
+229	[]	By ensuring ease of use and accessibility, the proposed system enhances user satisfaction and system efficiency, supporting the successful implementation of An Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang.
+230	[]	
+231	['ListParagraph']	Benefits of kiosk-based queuing in public institutions
+232	[]	          Kiosk-based queuing systems help streamline processes, reduce waiting time, and improve overall service efficiency in public institutions This shows that integrating modern technology can significantly enhance service delivery and customer experience[6]. In connection with An Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang, this supports the implementation of automated queue management in school offices. The proposed system aims to improve transaction flow, reduce congestion, and increase user satisfaction, making An Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang a practical solution for managing queues in the Registrar and Cashier offices.
+233	[]	
+234	[]	
+235	[]	
+236	[]	
+237	[]	
+238	[]	Related Systems
+239	[]	Local Systems
+240	[]	Figure 1. Automated Enrollment Queueing System Interface
+241	[]	          This figure presents the interface of an automated queuing system used in a university setting. The system displays real-time queue status such as waiting, next, and counter availability, allowing students to monitor their position in the queue. The interface helps reduce confusion and overcrowding during enrollment by organizing the flow of students efficiently. It provides transparency and improves service delivery by allowing users to track their queue status and assigned service window. [7]
+242	[]	
+243	[]	
+244	[]	
+245	[]	
+246	[]	Figure 2. Laguna Medical Center Queuing Management System Interface
+247	[]	          This figure shows the interface of a queuing management system used in a healthcare environment. The system organizes patient flow by categorizing queues into waiting, priority, pending, and completed transactions. It helps optimize service delivery by reducing waiting time and improving resource allocation. The system also supports priority handling for special cases, ensuring that urgent patients are served promptly. [8]
+248	[]	
+249	[]	
+250	[]	
+251	[]	
+252	[]	
+253	[]	
+254	[]	Figure 3. Water Level Monitoring System Dashboard
+255	[]	          This figure presents a dashboard of a water level monitoring system that uses data analytics to track and visualize environmental data. The system provides graphical representations of water levels, enabling real-time monitoring and decision-making. It supports data-driven analysis by presenting trends and patterns that assist in evaluating system performance and environmental conditions. [9]
+256	[]	
+257	[]	
+258	[]	
+259	[]	
+260	[]	
+261	[]	
+262	[]	
+263	[]	
+264	[]	
+265	[]	
+266	[]	
+267	[]	Figure 4. Kiosk Device User Interface for Cashier Queuing System
+268	[]	          This figure shows a kiosk-based interface used in a cashier queuing system. The system allows users to generate queue numbers and monitor their status through a digital display. It includes features such as real-time queue updates and SMS notifications to inform users when their turn is approaching. This enhances user convenience and reduces congestion in service areas by providing an organized queuing process. [10]
+269	[]	
+270	[]	
+271	[]	
+272	[]	
+273	[]	
+274	[]	
+275	[]	
+276	[]	
+277	[]	
+278	[]	
+279	[]	
+280	[]	Figure 5. Jeepney Terminal Queuing System Queue Page Interface
+281	[]	          This figure presents the queue page interface of a queuing management system used in a jeepney terminal. The system displays organized queue entries, including queue numbers, waiting lists, and service status across different stations. It allows users and operators to view the current queue flow in a structured and sequential manner, making it easier to track which passengers are waiting and which are currently being served. The interface serves as a centralized queue management page where users can monitor queue progression and service availability. It improves organization and reduces confusion by clearly presenting queue information in real time. The system replaces manual queuing procedures by automating queue tracking and providing a more systematic process for managing passenger flow. [11]
+282	[]	
+283	[]	
+284	[]	Foreign Systems
+285	[]	
+286	[]	Figure 6. Smart Queue Management System Interfaces
+287	[]	          This figure presents various interfaces of a smart queue management system, including the dashboard, queue management module, queue registration interface, queue status display, and analytics dashboard. The system provides real-time information such as the number of waiting customers, average waiting time, service status, and queue progression. It allows users to register for a service, generate queue tickets, and monitor their position in the queue through a structured interface. The system also includes management features that enable staff to call the next customer, assign service counters, and monitor ongoing transactions. The analytics component displays graphical reports such as customer flow trends, service time distribution, and performance metrics, supporting data-driven monitoring of system operations. These features collectively contribute to improved organization, transparency, and efficiency in handling customer queues within service-oriented environments. [12]
+288	[]	
+289	[]	
+290	[]	
+291	[]	
+292	[]	
+293	[]	
+294	[]	
+295	[]	
+296	[]	
+297	[]	Figure 7. Cloud-Based Intelligent Queue Management System Interfaces
+298	[]	          This figure presents the integrated interfaces of a cloud-based intelligent queue management system with predictive analysis capabilities. The system includes modules for queue management, customer queue status, and analytics visualization. The interface displays real-time queue information such as the number of waiting customers, average waiting time, and service availability. It allows staff to manage active queues by viewing customer details, updating queue status, and performing service actions through a centralized platform. The system also provides a customer-facing interface where users can view their current queue position, estimated waiting time, and service details. In addition, the analytics component presents graphical representations such as wait time trends, customer volume, and performance metrics. These features support efficient monitoring, improve service organization, and enable data-driven evaluation of queue performance in service-oriented environments. [13]
+299	[]	
+300	[]	
+301	[]	
+302	[]	
+303	[]	
+304	[]	
+305	[]	
+306	[]	
+307	[]	
+308	[]	Figure 8. NoQ Real-Time Queue Management System Interface
+309	[]	          This figure presents the interfaces of the NoQ real-time queue management system, a digital platform designed to improve service flow in healthcare environments. The system allows users to register for services, receive digital queue numbers, and monitor their queue status in real time through mobile devices or connected display systems. It provides a structured process that replaces traditional manual queuing methods with an automated and organized approach. The system includes multiple interfaces such as the user registration screen, queue tracking interface, and administrative dashboard used by staff to manage queue operations. It enables service personnel to control queue sequencing, prioritize requests, and monitor ongoing transactions efficiently. The visual interfaces demonstrate how real-time queue updates and mobile-based access enhance transparency, reduce waiting time, and improve overall service management. [14]
+310	[]	
+311	[]	
+312	[]	
+313	[]	
+314	[]	
+315	[]	
+316	[]	
+317	[]	
+318	[]	
+319	[]	
+320	[]	
+321	[]	Figure 9. Intelligent Queue Management System Interfaces and Physical Setup
+322	[]	        
+323	[]	 This figure presents the integrated interfaces and physical setup of an intelligent queue management system designed to support social and health considerations in service environments. The system includes staff-facing interfaces such as the counter user interface and manager control panel, which allow personnel to manage queue operations, call customers, configure system settings, and prioritize service based on specific conditions such as age or health status. These interfaces provide tools for monitoring transactions and adjusting queue flow in real time. The figure also shows the physical implementation of the system, including display screens and service counters used for queue announcements and customer interaction. The system utilizes digital registration, identity verification, and automated queue tracking to manage service processes efficiently. [15]
+324	[]	
+325	[]	
+326	[]	Figure 10. GovQueue System Interfaces (Citizen, Staff, and Admin Modules)
+327	[]	          This figure presents the integrated interfaces of the GovQueue system, a web-based queue management and token generation platform designed for public service environments. The system includes multiple modules such as the citizen dashboard, staff interface, and administrative dashboard. The citizen interface allows users to generate service-specific queue tokens, monitor their queue status, and receive real-time updates regarding their position and service progress. The staff and administrative interfaces provide tools for managing queue operations, including assigning service counters, monitoring queue flow, and handling customer transactions. The admin dashboard also displays system data such as token counts, peak service hours, and staff activity, enabling effective monitoring and control of queue processes. These interfaces demonstrate how the system  supports organized queue handling, real-time communication, and efficient service delivery in public office settings. [16]
+328	[]	
+329	[]	Synthesis
+330	[]	The reviewed literature and related systems show that automated queue management systems help improve services and reduce for a long waiting time in different organizations. Many studies explain that changing manual queuing into digital systems makes the process even faster, more organized and easier for the both staff and users.
+331	[]	Local studies such as the Automated Enrolment Queueing System, GS Services Digital Queuing System, and Hospital Queuing System with Smart Kiosk show that automatic ticket issuance the digital display boards and kiosks to help reduce crowding and confusion in service areas. These systems show that having a proper queue system helps manage many clients at the same time and improves the overall service experience.
+332	[]	International studies also support these ideas by adding technologies like cloud systems, mobile applications, and monitoring tools. Systems like Smart Queue Management System, NoQ Real-Time Queue Software, and GiFa Intelligent Queue Manager use real-time updates and notifications to make queue handling more fair and organized. However, most of these systems focus only on managing queues and basic monitoring. Only few systems include performance tracking and KPI monitoring to measure how well the service is performing.
+333	[]	Because of this the proposed Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring for the Lyceum of Alabang plans to combine kiosk ticketing, automated queue handling, audio-visual announcements, and performance monitoring into one system. This will help the organization manage queues better and also monitor service performance for improvement. 
+334	[]	The enhanced system extends the basic queuing functions discussed in the existing literature by incorporating service-performance analytics, KPI monitoring, detailed reporting, configurable queue displays, service-window management, staff management, activity monitoring, and real-time synchronization. The developed system further extends these capabilities by supporting Accounting/Cashier, Registrar, ITM, and Admission through department-based queue management. It implements a 4 Priority to 2 Regular serving sequence and provides separate Main Admin and Department Head Admin access. Additionally, Predicted Waiting Time, Peak Hour Prediction, and Smart Queue Congestion Risk strengthen the system’s ability to assess queue conditions and support administrative decision-making. The additional functions allow queue information to be examined not only as a list of waiting customers but also as operational data that can be used to evaluate service performance. Service-window performance is derived from recorded service timestamps and actual system assignments rather than unsupported assumptions, helping maintain more reliable performance information. 
+335	[]	
+336	[]	
+337	[]	
+338	[]	
+339	[]	
+340	[]	
+341	[]	
+342	[]	
+343	[]	
+344	[]	
+345	[]	
+346	[]	Conceptual Model Of The Study
+347	[]	 
+348	[]	Figure 11. Conceptual Model of the Study
+349	[]	          The conceptual model of the study is based on the Input–Process–Output (IPO) framework, which illustrates the systematic flow of developing and evaluating the proposed system. The input phase includes the essential requirements needed for system development, such as knowledge, software, and hardware components. Knowledge requirements involve understanding web development technologies (React.js, PHP, MySQL), local server environment setup (e.g., XAMPP), system analysis and design, UI/UX design principles, and queuing management concepts. Software requirements include an operating system such as Windows 10 or above, a web server like Apache, a database management system such as MySQL, and a modern web browser for system access  while hardware requirements include the necessary specifications such as processor, memory, and storage to support system development and operation.
+350	[]	The process phase follows the Agile methodology, which includes planning and requirements gathering, system design, iterative development (sprints), testing and feedback, and deployment with continuous improvement. Through this process, the system is developed incrementally and improved based on user feedback. The output of the study is an Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring for Lyceum of Alabang, designed to enhance queue management efficiency through automation, real-time monitoring, and performance analytics. The model also includes an evaluation component based on ISO/IEC 25010 and user feedback to assess the system’s overall performance, usability, and effectiveness.
+351	[]	The enhanced conceptual model includes real-time synchronization, service-window management, analytics and reporting, display configuration, activity monitoring, and timestamp-based service-performance measurement. Queue events are recorded and synchronized across the system so that staff, administrators, and the public display can receive updated queue information. Completed service transactions provide the timestamps used for valid service-performance calculations, while unavailable historical operating-session information is not assumed when determining idle time or utilization.
+352	[]	The enhanced conceptual model also incorporates the four supported departments, balanced Regular and Priority processing, and role-based administration. The Main Admin oversees overall operations, while Department Head Admins manage their respective departments. The system’s three intelligent behaviors use recorded queue and service information to generate waiting-time estimates, peak-hour predictions, and congestion risk assessments as additional outputs.
+353	[]	
+354	[]	Definition of Terms
+355	['ListParagraph']	Active Time - The accumulated service time of valid completed transactions handled by a service window, based on recorded call and completion timestamps.
+356	['ListParagraph']	Activity Log - A record of relevant system and queue activities used to monitor and review system operations.
+357	['ListParagraph']	Admin - The authorized user who oversees system operations, manages user accounts and settings, monitors queues, and reviews analytics, reports, and KPIs.
+358	['ListParagraph']	Admission Department - The school department responsible for admission-related transactions supported by the queuing system.
+359	['ListParagraph']	Analytics Dashboard - An administrative interface that presents summarized queue and service-performance information using KPIs, comparisons, trends, and other analytical views.
+360	['ListParagraph']	Announcement Ticker - A configurable scrolling or displayed message on the queue display that presents announcements to clients.
+361	['ListParagraph']	Audio-Visual Announcement System - A system feature that announces and displays the current queue ticket and service information through audio and visual outputs.
+362	['ListParagraph']	Centralized Database - A unified database used by the system to store and manage queue information, user records, transaction history, assignments, and performance data.
+363	['ListParagraph']	Department Head Admin - An authorized administrative account assigned to one department, with access limited to its queue operations, reports, analytics, and permitted management functions.
+364	['ListParagraph']	Digital Display Board - An electronic display that presents current queue information, waiting tickets, service windows, and announcements.
+365	['ListParagraph']	Display Configuration - Administrative settings used to control the appearance and behavior of the public queue display, including branding, layout, visible windows, background, and announcements.
+366	['ListParagraph']	Intelligent Queuing Management System - A computerized system designed to automate queue-ticket issuance, manage service flow, support Regular and Priority processing, and provide operational monitoring and performance analytics.
+367	['ListParagraph']	ITM Staff - Backup personnel who can perform the necessary staff functions of the Cashier or Registrar when their regular staff are unavailable, including processing Regular and Priority tickets.
+368	['ListParagraph']	Key Performance Indicators (KPI) - Quantitative measures, such as waiting time, service time, completion rate, and transaction volume, used to assess service performance.
+369	['ListParagraph']	Kiosk Interface - A self-service interface used by clients to enter required information, select services, and generate queue tickets.
+370	['ListParagraph']	Local Area Network (LAN) - A network that connects computers and supported devices within a limited area, such as a school.
+371	['ListParagraph']	Main Admin - The primary administrator responsible for managing and monitoring the overall queuing system across all four departments.
+372	['ListParagraph']	Peak Hour Prediction - An intelligent feature that estimates possible busy service periods using historical queue arrivals and recent activity.
+373	['ListParagraph']	Polling - A controlled process in which the system periodically requests updated information from the server to keep selected interfaces current.
+374	['ListParagraph']	Predicted Waiting Time - An intelligent feature that estimates client waiting duration based on current queue conditions and recent service performance.
+375	['ListParagraph']	Priority Queue Number - A queue number assigned to verified qualified individuals, such as senior citizens, pregnant women, and Persons with Disabilities (PWDs), for priority processing.
+376	['ListParagraph']	Queue Ticket - A printed or digital queue identifier assigned to a client for service processing and tracking.
+377	['ListParagraph']	Real-Time Monitoring - The ability of the system to present updated queue and service information as operations change.
+378	['ListParagraph']	Real-Time Synchronization - The process of keeping queue, staff, service-window, and administrative information updated across supported system interfaces through synchronized data handling.
+379	['ListParagraph']	Regular Queue Number - A standard queue number assigned to clients who follow the regular service sequence.
+380	['ListParagraph']	Security Authorization - A system feature that requires verification and PIN-based approval by designated security personnel before a Priority ticket can be issued.
+381	['ListParagraph']	Security Personnel (Guard) - The authorized personnel responsible for verifying clients who qualify for priority processing and authorizing Priority ticket requests through the PIN-protected interface.
+382	['ListParagraph']	Service Performance Analytics - The analysis of recorded queue and service data used to evaluate workload, waiting time, service time, peak periods, staff performance, service-window performance, and related KPIs.
+383	['ListParagraph']	Service Performance Report - A report that summarizes queue activity and service-performance measures, such as tickets issued, clients served, waiting time, service time, completion rate, and related KPIs.
+384	['ListParagraph']	Service Window - A designated service station assigned to a department and, when applicable, to a staff member for handling queue transactions.
+385	['ListParagraph']	Smart Queue Congestion Risk - An intelligent feature that evaluates queue length, arrival rate, service rate, active windows, and queue trends to assess congestion risk and provide recommended actions.
+386	['ListParagraph']	Staff Panel - An interface used by Registrar, Cashier, and supported ITM staff to view and process queue transactions.
+387	['ListParagraph']	Voice Announcement - An audio feature that announces queue information using configurable voice settings.
+388	['ListParagraph']	Window Utilization - A service-performance measure used to evaluate valid service activity handled by a service window during a selected period.
+389	[]	
+390	[]	
+391	[]	
+392	[]	
+393	[]	
+394	[]	
+395	[]	
+396	[]	
+397	[]	
+398	[]	
+399	[]	
+400	[]	
+401	[]	
+402	[]	
+403	[]	Chapter 3
+404	[]	DESIGN AND METHODOLOGY
+405	[]	Software Development Methodology
+406	[]	          This study uses the Agile Methodology as the software development approach in developing the Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring for the Lyceum of Alabang. Agile is an iterative and flexible development methodology that allows continuous improvement of the system through repeated cycles called iterations or sprints.
+407	[]	The Agile Methodology is appropriate for this capstone project because it enables the researchers to develop the system in small functional parts, test each feature, and improve it based on feedback from users. This approach ensures that the system remains aligned with the actual needs of the Registrar and Finance Offices while allowing adjustments during the development process.
+408	[]	
+409	[]	
+410	[]	
+411	[]	
+412	[]	
+413	[]	      
+414	[]	Figure 12. Agile Methodology of the Proposed System
+415	[]	The Agile process used in this study includes the following phases:
+416	[]	1. Planning and Requirements Gathering
+417	[]	In this phase, the researchers gathered information about the existing manual queuing process in the Registrar and Finance Offices of Lyceum of Alabang. Observation and interviews were used to identify concerns such as long waiting times, congestion, inconsistent prioritization, and inefficient service flow. The findings were translated into requirements for a system that clearly distinguishes and manages Regular and Priority ticket processing.
+418	[]	2. System Design
+419	[]	Based on the identified requirements, the researchers designed the database structure, system architecture, user interfaces, and Regular and Priority ticket workflows. Unified Modeling Language (UML), Data Flow Diagrams (DFD), and an Entity Relationship Diagram (ERD) were used to represent system processes, data movement, user interactions, and database relationships.
+420	[]	3. Iterative Development (Sprints)
+421	[]	The system was developed in multiple iterations or sprints. In each sprint, specific features were implemented such as the kiosk interface, queue ticket generation, staff panel, admin dashboard, and queue display board. The system was developed using React for the front-end, PHP for the back-end, and MySQL for the database. Each sprint focused on delivering a functional part of the system that could be tested and improved. 
+422	[]	          During the later development iterations, additional functions were implemented to improve the administrative and operational capabilities of the system. These iterations focused on real-time synchronization, monitoring accuracy, analytics, reporting, service-window management, display configuration, ITM service support, staff management, activity monitoring, and reliable performance calculations. Testing was also expanded to verify queue synchronization, database-based window assignments, timestamp handling, and background refresh behavior.
+423	[]	Additional development iterations included the Admission department, expanded ITM operations, separate Department Head Admin accounts, and the 4 Priority to 2 Regular serving sequence. The researchers also incorporated three intelligent behaviors to provide predicted waiting times, peak-hour forecasts, and congestion risk assessments based on available queue and service information.
+424	[]	The system was developed through multiple iterations or sprints. Each sprint delivered and tested functional components such as the kiosk interface, Regular and Priority ticket generation, staff panel, administrative dashboard, analytics, reports, and queue display board. React was used for the front-end, PHP for the back-end, and MySQL for persistent database storage.
+425	[]	Later iterations focused on improving the reliability and operational accuracy of Regular and Priority ticket processing through live synchronization, database-based service-window assignments, analytics, reporting, display configuration, ITM support, staff management, activity monitoring, request handling, and timestamp validation.
+426	[]	5. Deployment and Continuous Improvement
+427	[]	After completing the development iterations and testing, the system was prepared for deployment within the school environment. Even after deployment, improvements and adjustments were made based on user feedback to ensure that the system continues to operate efficiently and effectively.
+428	[]	After each iteration, the implemented Regular and Priority ticket functions and related modules were tested to identify defects and verify expected behavior. Testing included component, integration, and system-level checks, while feedback was used to improve usability, data consistency, queue synchronization, and service operations.
+429	[]	After development and testing, the system was prepared for deployment in the school environment. Continued adjustments were made based on testing and user feedback to improve the stability, usability, and accuracy of Regular and Priority ticket operations and their supporting administrative functions.
+430	[]	To understand the existing problems in the administrative service process, the researchers conducted a requirements analysis using several data gathering techniques. This process aimed to identify issues in the current manual queuing system and determine the necessary features and functionalities for the proposed system.
+431	[]	
+432	[]	
+433	[]	
+434	[]	Requirements Analysis
+435	[]	The requirements analysis examined the existing manual queuing process and identified the functions needed for a more organized service environment. The requirements analysis also considered the queue operations of Accounting/Cashier, Registrar, ITM, and Admission. Additional requirements included department-specific administrative access, balanced Regular and Priority serving, and intelligent monitoring features that could assist administrators in evaluating queue conditions. Particular attention was given to queue sequencing, client eligibility, service-window assignment, monitoring, and the distinction between Regular and Priority ticket workflows.
+436	[]	
+437	[]	Data Gathering Techniques
+438	[]	The following techniques were used in gathering relevant data:
+439	[]	1. Observation
+440	[]	The researchers observed the current queuing process in the Registrar and Finance Offices to understand how transactions are handled. This included monitoring how Clients line up, how queue numbers are managed, and how staff handle multiple transactions during peak hours. Through observation, issues such as long waiting times, congestion, and disorganized queue flow were identified.
+441	[]	2. Interview
+442	[]	The researchers observed the current queuing process in the Registrar and Finance Offices to understand how clients line up, how service order is determined, and how staff handle transactions during peak periods. The observations informed requirements for automated Regular and Priority ticket handling, reduced congestion, and clearer queue progression.
+443	[]	3. Document Analysis
+444	[]	The researchers reviewed existing procedures and transaction records related to the queuing process. This helped in understanding how services are currently managed and identifying gaps that can be improved through system automation.
+445	[]	Interviews with Registrar staff, Cashier staff, security personnel, and clients were used to identify common concerns such as queue jumping, insufficient prioritization, service delays, and difficulty handling high client volume. These findings supported the design of separate Regular and Priority ticket workflows with controlled Priority authorization.
+446	[]	
+447	[]	Proposed System
+448	[]	Existing procedures and transaction records related to queue operations were reviewed to understand current service practices and identify opportunities for automation. The analysis informed the data requirements for Regular and Priority ticket records, service transactions, user activity, and performance reporting.
+449	[]	Through the system, Clients can select the service they need using the kiosk interface, receive a printed queue ticket, and wait for their number to be called through the digital display board and audio-visual announcement system. For qualified individuals such as senior citizens, pregnant women, Persons with Disabilities (PWDs), and other eligible clients, the system provides a priority queue feature that can only be accessed through verification and authorization by the assigned security personnel using a PIN-protected security interface.
+450	[]	The proposed system is an Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring designed to automate queue operations at Lyceum of Alabang. It replaces manual queue handling with kiosk-based Regular and Priority ticket issuance, centralized queue processing, service-window assignment, digital display updates, and database-driven monitoring.
+451	[]	Through the kiosk, clients provide the required information, select a supported service or transaction, and proceed through the Regular or Priority ticket workflow. The system generates a printed ticket and synchronizes its queue status with the staff interface and public display. Priority tickets require eligibility verification and security authorization before issuance.
+452	[]	Qualified clients such as Persons with Disabilities (PWDs), senior citizens, pregnant women, and other eligible individuals may receive Priority tickets after verification by designated security personnel using the PIN-protected authorization interface. Clients who do not require priority handling proceed through the Regular ticket workflow, ensuring that both Regular and Priority service paths remain clearly controlled.
+453	[]	Registrar, Cashier, and supported ITM staff use the staff interface to monitor waiting clients and process assigned Regular and Priority tickets. Staff can call the next eligible ticket, complete service, or record skip/no-show actions, while administrators use centralized monitoring, analytics, reports, staff management, service-window management, display settings, and activity logs to oversee operations.
+454	[]	Regular and Priority ticket records, service transactions, assignments, and activity data are stored in the centralized database. The administrative Monitoring, Analytics, and Reports modules use these recorded data for selected periods and departments, while the public display and staff interfaces receive synchronized queue information. This design supports more accurate operational monitoring and traceable queue history.
+455	['ListParagraph']	Idle Time
+456	[]	Idle time refers to the duration when a service window is not actively serving any client. Monitoring idle time helps identify inefficiencies in staff utilization and service distribution. Idle Time is only considered measurable when reliable historical operating-session intervals are available. A closed service window is not automatically treated as an idle window. For this reason, utilization is determined only when sufficient operating-time information is available. Active Time is based on valid completed service timestamps, while invalid timestamps and waiting, serving, cancelled, skipped, or no-show records are excluded from completed-service calculations.
+457	['ListParagraph']	Processing Time (Duration)
+458	[]	Processing time refers to the amount of time required to complete a single transaction. This metric is used to evaluate the efficiency of service delivery for both Registrar and Cashier operations.
+459	['ListParagraph']	System Capacity (Throughput)
+460	[]	System capacity, also known as throughput, refers to the number of clients served within a specific period (e.g., per hour). This metric measures the overall performance and capability of the system in handling large volumes of transactions.
+461	['ListParagraph']	Comparison Between Priority and Regular Processes
+462	[]	The study compares the performance of priority and regular queues in terms of waiting time, processing time, and service efficiency. This comparison helps determine whether priority handling improves service delivery without negatively affecting regular clients.
+463	['ListParagraph']	Results Based on Ratios and Volume
+464	[]	System performance is also analyzed using ratios and volume-based data, such as the number of clients served per hour, the ratio of priority to regular clients, and the percentage improvement in waiting time. These measurements provide a quantitative basis for evaluating system effectiveness.
+465	['ListParagraph']	
+466	['ListParagraph']	
+467	['ListParagraph']	
+468	['ListParagraph']	
+469	['ListParagraph']	
+470	['ListParagraph']	
+471	[]	
+472	[]	System Diagrams
+473	[]	
+474	[]	Figure 13. System Block Diagram of the Proposed System
+475	[]	This diagram shows the overall structure of the Intelligent Queuing Management System and the interaction among its major components. Clients use the kiosk to select services from Cashier, Registrar, ITM, or Admission and obtain Regular or Priority tickets. Priority requests require security authorization. The queue management application processes and routes tickets to the appropriate department, where staff manage their assigned queues, call the next client, complete transactions, and skip unattended tickets. ITM and Admission operate as separate service departments. Queue records, service transactions, and timestamps are stored in the centralized MySQL database and used for administrative monitoring, analytics, KPI monitoring, predictions, and reports. The queue display presents serving numbers, waiting queues, assigned windows, and audio announcements, while the local print service handles thermal ticket printing.
+476	[]	
+477	[]	
+478	[]	Figure 14. Context Diagram of the Proposed System
+479	[]	This context diagram shows the interaction between the Intelligent Queuing Management System and its external users: clients, Cashier staff, Registrar staff, ITM staff, Admission staff, security personnel, and administrators. Clients select services and request Regular or Priority tickets, then receive their queue numbers and ticket status. Security personnel provide authorization codes for eligible Priority requests, which the system validates. Cashier, Registrar, ITM, and Admission staff independently manage their respective departmental queues, call the next client, complete transactions, and skip unattended tickets. The system provides each department with its queue list and ticket status. Administrators manage users, departments, and system settings and receive reports, KPI results, and analytics for monitoring service performance.
+480	[]	
+481	[]	
+482	[]	Figure 15. Data Flow Diagram of the Proposed System
+483	[]	This Level 1 Data Flow Diagram illustrates how data moves through the Intelligent Queuing Management System. In Queue Ticket Generation, clients submit their identification details, selected service, and priority type. Priority requests require security authorization, while student information is validated using stored records. The system generates ticket details and saves the ticket record in the Queue Tickets data store.
+484	[]	Queue Management retrieves waiting tickets and provides department-specific queue information to Cashier, Registrar, ITM, and Admission staff. Each department independently submits queue actions, including calling the next client, completing transactions, and skipping unattended tickets. Service Processing records the assigned staff and window, service timestamps, transaction outcomes, and activity logs. Performance Monitoring and Reporting uses user, ticket, transaction, and log data to produce reports, analytics, KPI results, and predictions based on the administrator’s selected filters.
+485	[]	
+486	[]	Figure 16. Use Case Diagram of the Proposed System
+487	[]	
+488	[]	This use case diagram presents the functions available to each user of the Intelligent Queuing Management System. Clients select a department and transaction type, enter their student number or continue as guests, choose a Regular or Priority ticket, and receive their queue ticket. Security personnel verify eligibility and authorize qualified Priority requests.
+489	[]	Cashier, Registrar, ITM, and Admission staff independently manage their respective departmental queues. They view waiting tickets, call the next eligible client, complete service transactions, skip unattended tickets, and use the Staff Mini View. Registrar staff can also open or close their assigned service window.
+490	[]	The Head Admin oversees all departments, monitors system-wide queues and performance, views analytics and KPIs, generates reports, manages staff and Department Admin accounts, configures display and department settings, and reviews activity logs. The four Department Admins Cashier, Registrar, ITM, and Admission—monitor their assigned departmental queues, access department-specific analytics, KPIs, and predictions, generate reports, and manage their department’s staff and service-window assignments. These roles define each user’s responsibilities and scope of access within the system.
+491	[]	
+492	[]	Requirements Documentation
+493	[]	          This section describes the principal modules of the proposed Intelligent Queuing Management System. The modules work together to support client interaction, Regular and Priority ticket issuance, controlled Priority authorization, staff queue processing, service-window operations, administrative monitoring, analytics, reporting, and synchronized display-board updates.
+494	[]	
+495	[]	
+496	[]	
+497	[]	Kiosk Interface
+498	[]	The kiosk is the primary client-facing interface of the system. It guides clients through identification or guest processing, department and transaction selection, and the choice between Regular and Priority ticket workflows. After the required selections are completed, the kiosk generates the appropriate queue ticket and records it in the centralized database for synchronized processing.
+499	[]	Priority Authorization 
+500	[]	Priority Authorization is used by designated security personnel to verify clients who qualify for Priority tickets, including Persons with Disabilities (PWDs), senior citizens, pregnant women, and other eligible individuals. The authorization step requires a security PIN before a Priority ticket can be issued; clients who do not require priority handling continue through the Regular ticket workflow.
+501	[]	
+502	[]	Ticket Generation 
+503	[]	Ticket Generation creates the queue record after the client completes the kiosk workflow. Each Regular or Priority ticket contains the queue number, department or service, ticket classification, relevant service-window information when applicable, and issuance timestamp. The ticket serves as the client's reference while the same record is used by staff, display, monitoring, analytics, and reporting modules.
+504	[]	
+505	[]	Staff Panel (Registrar and Cashier)
+506	[]	The Staff Panel enables Registrar, Cashier, and supported ITM personnel to process assigned Regular and Priority tickets. It displays waiting-queue information, current time, assigned window, and the current serving state, and provides actions for calling the next eligible ticket, completing service, and recording skip/no-show outcomes. A Mini View provides a compact operational view while preserving the same underlying staff session and queue state.
+507	[]	Admin Dashboard
+508	[]	The Admin Dashboard provides a high-level view of Regular and Priority ticket operations and key service indicators. Administrators can monitor waiting and serving activity, completed and skipped/no-show records, waiting-time indicators, service-performance summaries, and queue trends, while related administrative pages provide monitoring, analytics, reports, staff management, settings, and activity logs.
+509	[]	Queue Display Board
+510	[]	The Queue Display Board presents currently served Regular and Priority tickets together with their assigned service windows and waiting information. The display is synchronized with queue activity and supports audio announcements so clients can identify when and where their ticket is being served.
+511	[]	
+512	[]	
+513	[]	Design of Software, Systems, Product and/or Process User Interface Design
+514	[]	          The user interface was designed to provide consistent, readable, and role-appropriate interaction across kiosk, staff, security, display, and administrative modules. Visual hierarchy, clear controls, and synchronized status information support efficient handling of both Regular and Priority tickets without requiring users to interpret raw database information.
+515	[]	
+516	[]	Figure 17. Kiosk Interface Screen
+517	[]	The welcome screen establishes the kiosk entry point using Lyceum of Alabang branding, a live date-and-time display, and a prominent touch target. Clients tap the screen to begin the identification and service-selection sequence that leads to either a Regular or Priority ticket.
+518	[]	
+519	[]	
+520	[]	
+521	[]	Figure 18. Student Number Input Screen
+522	[]	This figure shows the Student Number Input Screen, where clients can enter their student number to proceed with the queueing process. It also provides a Continue as Guest option for clients without a student number and a Back to Welcome option to return to the kiosk welcome screen.
+523	[]	
+524	[]	
+525	[]	
+526	[]	Figure 19. Service Selection Screen (Cashier and Registrar)
+527	[]	The service-selection sequence first captures the client identifier or guest option and then presents the available service departments. This step routes the client to the appropriate queue before the system proceeds to the Regular or Priority ticket classification.
+528	[]	
+529	[]	
+530	[]	Figure 20. Regular and Priority Selection Screen
+531	[]	The ticket-type screen clearly separates the Regular and Priority options. Regular tickets follow the standard queue sequence, while the Priority option proceeds through the required eligibility and security-authorization process before ticket issuance.
+532	[]	
+533	[]	
+534	[]	Figure 21. Staff Login Interface
+535	[]	The login screen provides a focused credential form for authorized system users. Successful authentication loads the role-appropriate workspace used to manage Regular and Priority tickets and prevents unauthorized access to operational functions.
+536	[]	
+537	[]	
+538	[]	
+539	[]	
+540	[]	
+541	[]	Figure 22. Cashier Panel – Ready to Serve State
+542	[]	In the ready state, the Cashier Panel shows the assigned window, current waiting count, time, and waiting-customer list. The Call Next Ticket action selects the next eligible Regular or Priority ticket according to the implemented queue rules.
+543	[]	
+544	[]	
+545	[]	Figure 23. Cashier Panel – Serving Ticket State
+546	[]	In the serving state, the Cashier Panel prominently displays the active Regular or Priority ticket and provides completion and Skip/No Show controls. The waiting list remains visible so staff can monitor the remaining queue while the current transaction is processed.
+547	[]	
+548	[]	
+549	[]	Figure 24. Registrar Panel – Ready to Serve State
+550	[]	The Registrar ready state displays the assigned Registrar window and the waiting Regular and Priority tickets. Window availability controls are available to supported Registrar staff so closed windows can be reflected as unavailable in the kiosk and monitoring interfaces.
+551	[]	
+552	[]	
+553	[]	Figure 25. Registrar Panel – Serving Ticket State
+554	[]	The Registrar serving state highlights the current Regular or Priority ticket and its service status while retaining the waiting list and service controls. Completing or skipping the active ticket updates the centralized queue state for the staff, display, monitoring, analytics, and reporting modules.
+555	[]	The ticket contains:
+556	[]	Queue number
+557	[]	Department
+558	[]	Ticket classification (Regular or Priority)
+559	[]	Window number
+560	[]	Date and time
+561	[]	
+562	[]	
+563	[]	Figure 26. ITM Staff Panel
+564	[]	The ITM staff interface supports ITM personnel in serving as backup staff when Cashier or Registrar staff are unavailable. It provides the necessary staff functions for processing the unavailable office's Regular and Priority tickets, including viewing the waiting queue, calling the next eligible ticket, completing service, and recording skip/no-show outcomes.
+565	[]	
+566	[]	
+567	[]	Figure 27. Staff Mini View
+568	[]	The Staff Mini View provides a compact version of the active staff workspace for Regular and Priority ticket processing. It retains the same logged-in staff identity, assigned window, waiting count, current ticket state, and queue actions while allowing the staff interface to remain accessible in a smaller operational view.
+569	[]	
+570	[]	Figure 28. Window Selection for Priority Processing
+571	[]	The window-selection screen allows an eligible Priority request to be routed to an available Registrar service window. Window availability is based on the configured service-window state so unavailable windows are not selected for Priority ticket processing.
+572	[]	
+573	[]	
+574	[]	
+575	[]	Figure 29. Security Authorization (PIN Entry Screen)
+576	[]	The security-authorization screen requires the designated security code before a Priority ticket can be approved. This control protects the Priority workflow while leaving the Regular ticket process available without priority authorization.
+577	[]	
+578	[]	Figure 30. Generated Queue Ticket Confirmation
+579	[]	The Queue Ticket confirmation screen displays the generated Regular or Priority ticket number together with issuance information after the kiosk workflow is completed. The ticket record is stored in the centralized database and becomes available to the appropriate staff queue and public display for synchronized processing.
+580	[]	
+581	[]	
+582	[]	
+583	[]	Figure 31. Admin Dashboard
+584	[]	The Admin Dashboard consolidates operational indicators for Regular and Priority ticket activity, including waiting, serving, completed, skipped/no-show, and waiting-time measures. Charts and KPI panels provide a high-level view of queue volume and service performance using synchronized system data.
+585	[]	
+586	[]	
+587	[]	
+588	[]	
+589	[]	
+590	[]	Figure 32. Admin  Queue Monitoring Interface
+591	[]	The Queue Monitoring interface provides administrators with a live operational view of Regular and Priority ticket activity across service windows. It displays window availability, current serving information, assigned staff, queue counts, and department filters so administrators can identify the current state of each configured service point.
+592	[]	
+593	[]	
+594	[]	
+595	[]	
+596	[]	Figure 33. Analytics Interface
+597	[]	The Analytics interface provides department-specific analysis of Regular and Priority ticket records. It supports selected-period filtering and presents service totals, waiting and service-time indicators, completion rate, transaction trends, window comparisons, peak periods, and other performance measures using recorded database data.
+598	[]	
+599	[]	
+600	[]	
+601	[]	Figure 34. Reports Interface
+602	[]	The Reports interface summarizes Regular and Priority ticket activity for the selected period and department. KPI cards and performance summaries are derived from recorded queue and service data, and the PDF export is intended to present accurate charts and concise performance information for administrative review.
+603	[]	
+604	[]	
+605	[]	
+606	[]	Figure 35. Staff Management Interface
+607	[]	The Staff Management interface presents database-backed operational accounts used for Regular and Priority ticket processing. Administrators can review staff identity, role, position, and account status and perform permitted account-management actions without relying on hardcoded staff names.
+608	[]	
+609	[]	Figure 36. Display Board Settings Interface
+610	[]	The Display Board Settings interface allows administrators to configure how Regular and Priority ticket information is presented on the public display. It supports service-window visibility and order, assigned staff information, display labels, branding, announcements, and other presentation settings while keeping the preview aligned with the configured display behavior.
+611	[]	
+612	[]	
+613	[]	Figure 37. Activity Logs Interface
+614	[]	The Activity Logs interface records operational events associated with Regular and Priority ticket processing, including staff access, ticket calls, completed services, and other supported actions. The searchable history supports administrative review and accountability by preserving the responsible user, department, assigned window, action, and timestamp.
+615	[]	
+616	[]	
+617	[]	
+618	[]	Figure 38. Queue Display Board (Now Serving & Waiting List)
+619	[]	The public display emphasizes the Regular or Priority ticket currently being served and its assigned window while maintaining a separate waiting list. The layout is designed for visibility at a distance and works with the system's audio announcement function to guide clients to the correct service point.
+620	[]	
+621	[]	
+622	[]	
+623	[]	
+624	[]	
+625	[]	
+626	[]	
+627	[]	
+628	[]	
+629	[]	Network Infrastructure Design
+630	[]	          The network infrastructure is designed to connect the kiosk, staff computers, administrator computer, queue display board, queue management application, and centralized database through a Local Area Network (LAN). The kiosk uses a Mini PC as its main processing unit, connected to the touchscreen monitor and thermal receipt printer. Through the network, Regular and Priority ticket information and other queue-related data are processed by the queue management application and stored in the centralized MySQL database. This centralized setup allows the connected system interfaces to retrieve updated queue information and maintain consistent data across kiosk, staff, administrative, and display-board operations.
+631	[]	
+632	[]	Figure 39. Network Infrastructure Diagram
+633	[]	This diagram shows the network infrastructure of the System, including the kiosk hardware and connected system devices. The kiosk uses a Mini PC as its main processing unit, which is connected to the kiosk monitor for client interaction and to the thermal receipt printer for printing Regular and Priority queue tickets. The Mini PC, Registrar, Cashier, ITM backup staff, Administrator, and Queue Display Board communicate through the Local Area Network (LAN) to access the queue management application and centralized MySQL database. This setup allows queue information, service transactions, staff operations, monitoring data, analytics, and display-board updates to remain synchronized across the system.
+634	[]	
+635	[]	Database Infrastructure Design
+636	[]	          The system uses a centralized MySQL relational database to manage the operational data required by the Intelligent Queuing Management System. It stores user accounts, Regular and Priority queue tickets, service transactions, service logs, service-window assignments, display-window configurations, display settings, authentication sessions, and access-token information. Queue ticket records contain information such as the ticket number, service and transaction type, student number when applicable, priority classification, status, assigned window, and timestamps used for queue tracking and performance measurement.
+637	[]	Relationships among the database entities maintain consistency between Regular and Priority queue tickets, staff accounts, service transactions, service windows, activity records, and display configurations. Foreign-key relationships associate processed tickets with service transactions and responsible staff members, while staff accounts can be associated with service windows and system activity records. These stored records provide the information required by the kiosk, staff interfaces, administrative monitoring, analytics, KPI calculations, reports, and queue display functions.
+638	[]	The centralized database also supports accurate retrieval of staff information, window assignments, queue history, and display settings throughout the system. Analytics and reports use recorded transaction and timestamp data according to the selected reporting period instead of relying on hardcoded values. This database-centered approach helps ensure that Regular and Priority ticket information and related operational records remain consistent across the system.
+639	[]	
+640	[]	
+641	[]	Figure 40. Entity Relationship Diagram of the Proposed System
+642	[]	This diagram shows the database structure and relationships among the entities used in the Intelligent Queuing Management System. It illustrates how users, queue tickets, service transactions, service logs, service windows, display windows, display settings, sessions, and personal access tokens are organized and connected through their respective primary and foreign keys. The database stores information required for Regular and Priority tickets, staff accounts and assignments, queue transactions, service-window availability, display-board configuration, authentication sessions, and system activity records. These relationships allow the system to maintain consistent and synchronized data for kiosk ticket generation, Cashier and Registrar queue processing, ITM backup staff operations, administrative monitoring, analytics, reports, and other system functions.
+643	[]	
+644	[]	Testing Procedure
+645	[]	          To ensure that the system functions correctly and meets user requirements, the researchers conducted testing procedures using Alpha Testing and Beta Testing.
+646	[]	1. Alpha Testing
+647	[]	Alpha testing was conducted by the researchers during the development phase of the system. This testing aimed to identify and fix errors, bugs, and system issues before the system was released to actual users. Each module of the system, including the kiosk interface, ticket generation, staff panel, admin dashboard, and queue display board, was tested to ensure that they function properly and produce accurate results. Necessary corrections and improvements were made based on the results of this testing.
+648	[]	Additional testing included the four-department queue structure, Main Admin and Department Head Admin access restrictions, the 4 Priority to 2 Regular serving sequence, and the three intelligent behaviors. Testing focused on verifying queue processing, department-specific information access, prediction displays, and congestion risk assessments. Additional alpha testing covered administrative synchronization, live monitoring, analytics, reporting, staff management, service-window management, display configuration, ITM service, activity monitoring, and service-performance calculations. Testing also considered automatic background refresh, request handling, timestamp validation, queue-state updates, and the accuracy of database-based service-window assignments.
+649	[]	2. Beta Testing
+650	[]	Beta testing was conducted with selected respondents, including Clients, Registrar staff, Cashier staff, and security personnel of Lyceum of Alabang. This testing was performed in a real or simulated environment to evaluate how the system performs during actual use. The respondents were asked to use the system and provide feedback regarding its usability, functionality, and overall performance. The results of the beta testing were used to assess the system’s effectiveness and identify areas for further improvement.
+651	[]	
+652	[]	Testing of System Modules
+653	[]	The following system modules were tested:
+654	[]	INTERFACEDESCRIPTIONKiosk In the alpha testing, we tested the kiosk interface by trying to select services (Registrar/Cashier) and then selecting regular vs. priority (where available) to ensure that users could do this and properly generate a queue ticket. In the beta phase, Clients were asked to try to use the kiosk and report back on how easy the interface is to use, how responsive it is, and how much sense it makes to them.Staff LoginWe tested the login page to make sure authorized users can successfully log in with correct credentials. In the beta, staff verified that role-based access (Admin, Registrar, Cashier) is working correctly and denying access to individuals without proper access rights.Cashier PanelAfter initial alpha testing, we confirmed that the new and improved cashier panel correctly displays the number of waiting clients, current time, active queue, calling for the next ticket, completing a payment transaction, and canceling a service. In our beta test, cashiers used the improved cashier panel and found it to be very usable and efficient for processing transactions.Registrar PanelThe registrar panel was tested to ensure it can manage Client-related transactions such as enrollment and document requests. Staff tested features such as calling the next ticket and monitoring queue flow. Beta testing confirmed that the interface supports smooth and organized queue handling.Admin Dashboard The admin dashboard was tested to verify that administrators can monitor queue status, view total clients, and manage staff accounts (add, edit, delete). During beta testing, administrators confirmed that the dashboard provides accurate and useful system information.Queue Display BoardThe display board was tested to ensure that queue numbers are updated in real time and correctly assigned to service windows. During beta testing, users confirmed that the display is clear, readable, and helps them know when it is their turn.Security authorization The tested the system to confirm that security personnel are able to enter a PIN to authorize priority queue tickets. We conducted alpha testing of access validation and performed beta testing of ease of use and unauthorized access prevention.Analytics and ReportsVerify that analytics and reports display queue and service-performance data for the selected period and department.Service Window ManagementVerify service-window assignment, availability, open/closed state, and current queue activity.Display ConfigurationVerify branding, layout, windows, announcements, voice settings, and other configurable display options.ITM ServiceVerify that the independent ITM service window can issue and process ITM-related queue transactions.Real-Time SynchronizationVerify that queue and administrative information refreshes correctly and remains synchronized.
+655	[]	
+656	[]	Table 1. Testing Results of System Modules
+657	[]	
+658	[]	Evaluation Procedure
+659	[]	Instrument
+660	[]	          The instrument used in evaluating the Intelligent Queuing Management System was a set of open-ended interview questions prepared by the researchers. Each respondent was asked five (5) open-ended questions regarding their experience and feedback about the system.
+661	[]	The questions were designed to gather qualitative insights about the system’s usability, efficiency, and effectiveness in improving the queue management process.
+662	[]	The open-ended questions focused on the following aspects:
+663	[]	Ease of using the system interface
+664	[]	Efficiency of the queue management process
+665	[]	Clarity of the ticket and display information
+666	[]	System reliability and performance
+667	[]	Suggestions for improvement of the system
+668	[]	The responses gathered from the participants were analyzed to determine the strengths and possible improvements for the proposed system.
+669	[]	
+670	[]	Respondents of the Study
+671	[]	          The respondents of the study consisted of selected clients and IT experts who participated in the evaluation of the Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang. The respondents were selected to assess the system's functionality, usability, reliability, and overall software quality.
+672	[]	CATEGORYRESPONDENTNUMBEREnd UsersClients40IT ExpertsITM Department2IT ExpertsRegistrar Department1IT ExpertsIT Experts7Total:50
+673	[]	
+674	[]	Table 2. Distribution of Respondents of the Study
+675	[]	          As presented in Table 2, a total of fifty (50) respondents participated in the study, consisting of forty (40) end users and ten (10) IT experts. The end users were clients who evaluated the system based on their experiences and interactions with its features. Among the IT experts, two (2) were from the ITM Department, one (1) was from the Registrar Department, and seven (7) were other IT experts.
+676	[]	The participation of ITM and Registrar personnel was significant because these departments are among the intended beneficiaries of the proposed system. Their involvement provided additional technical feedback regarding the system's functionality, reliability, and potential application in actual departmental operations. The researchers employed purposive sampling to select respondents capable of providing relevant evaluations of the system.
+677	[]	
+678	[]	Statistical Treatment of Data
+679	[]	          The researchers utilized quantitative and qualitative methods to analyze the data gathered during the system evaluation. The quantitative responses obtained from the software evaluation questionnaires were analyzed using the weighted mean, while the open-ended responses were reviewed to identify common feedback and suggestions for system improvement.
+680	[]	Weighted Mean
+681	[]	The weighted mean was used to determine the respondents' assessment of the system based on the applicable ISO/IEC 25010 software quality characteristics. The following formula was applied:
+682	[]	[WM = \frac{\sum(f \times w)}{N}]
+683	[]	Where:
+684	[]	WM = Weighted Mean
+685	[]	Σ = Summation
+686	[]	f = Frequency of responses
+687	[]	w = Assigned weight of each rating
+688	[]	N = Total number of valid responses
+689	[]	The computed weighted means were interpreted using the following five-point rating scale.
+690	[]	RatingVerbal Interpretation5Excellent4Very Good3Good2Poor1Very Poor
+691	[]	Table 3. Five-Point Rating Scale and Verbal Interpretation
+692	[]	
+693	[]	
+694	[]	
+695	[]	
+696	[]	
+697	[]	
+698	[]	
+699	[]	
+700	[]	Chapter 4
+701	[]	RESULTS AND DISCUSSION
+702	[]	Project Description
+703	[]	The Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of  Alabang was developed to provide a more organized and efficient way of managing queues within the school. The system handles the queuing process of four departments, namely Accounting/Cashier, Registrar, ITM, and Admission. Through the kiosk, clients can select the service they need and receive either a Regular or Priority queue ticket. 
+704	[]	To balance the serving of clients, the system follows a 4 Priority to 2 Regular queue sequence. This means that four Priority clients can be served followed by two Regular clients. This setup was added so that Regular clients who have been waiting earlier will not be continuously left behind when there are many Priority clients in the queue. 
+705	[]	The system also has different levels of administrative access. Aside from the Main Admin, four separate Department Head Admin accounts are provided for Accounting/Cashier, Registrar, ITM, and Admission. These accounts have administrative functions similar to the Main Admin, but their access is limited to their assigned department. This allows each department head to focus on the queue activities and performance of their own department, while the Main Admin can monitor the overall system. 
+706	[]	One of the main features of the system is its System Intelligence, which consists of three intelligent behaviors: Predicted Waiting Time, Peak Hour Prediction, and Smart Queue Congestion Risk. These features use current and previously recorded queue information to provide useful estimates and assessments that can help the Main Admin and Department Head Admins monitor their operations. 
+707	[]	The Predicted Waiting Time estimates how long a client may need to wait before being served. It considers information such as the current queue, available service windows, and recent service performance. The Peak Hour Prediction uses historical queue arrivals and recent queue activity to estimate the busiest upcoming time of a department. Lastly, the Smart Queue Congestion Risk evaluates the current condition of the queue by considering factors such as queue length, arrival rate, service rate, active windows, and queue trends. It provides a congestion risk assessment together with a reason and recommended action.
+708	['NormalWeb']	Together with these intelligent behaviors, the system provides queue monitoring, analytics, KPI monitoring, reporting, queue display, ticket printing, and department-based administration. These features allow the system to not only manage clients in the queue but also provide information that can help administrators monitor service conditions and make better operational decisions. 
+709	['NormalWeb']	Project Structure
+710	['NormalWeb']	The system is divided into different modules that work together through a centralized database. These include the Kiosk Module, Queue Management Module, Staff Module, Queue Display Module, Main Admin Module, Department Head Admin Module, Analytics and KPI Monitoring, Reports, and the system's intelligent behaviors. 
+711	['NormalWeb']	The Kiosk Module is mainly used by clients. It allows them to select the department or transaction they need and get either a Regular or Priority queue ticket. Once a ticket is generated, the information is recorded in the database and added to the appropriate queue. 
+712	['NormalWeb']	The Queue Management Module is responsible for organizing the order of clients. The system follows a 4 Priority to 2 Regular sequences. This means that after four Priority clients, two Regular clients are included in the serving order. This setup helps prevent Regular clients from waiting for too long when several Priority clients enter the queue. 
+713	['NormalWeb']	The Staff Module is used by the personnel assigned to the different departments. Staff can view the waiting queue, call clients, and manage the tickets that belong to their department. 
+714	['NormalWeb']	The Queue Display Module shows the queue numbers that are currently being served. It helps clients know when their number has been called while they are waiting. Announcements can also be shown on the display board. 
+715	['NormalWeb']	For administration, the system has a Main Admin account that can monitor and manage the overall system. It also has separate Department Head Admin accounts for Cashier, Registrar, ITM, and Admission. Unlike the Main Admin, these accounts only have access to the information and functions related to their own department. 
+716	['NormalWeb']	The system also includes three intelligent behaviours for the Main Admin and Department Head Admin accounts. These features use the available queue and transaction data to provide useful information that can help in monitoring the current condition and performance of the departments. 
+717	['NormalWeb']	The Analytics and KPI Monitoring section use the records stored in the database to show information about queue activities and service performance. The Main Admin can monitor the overall system, while the Department Head Admin can focus on the information related to their assigned department. 
+718	['NormalWeb']	
+719	['NormalWeb']	Capabilities And Limitations
+720	['NormalWeb']	Capabilities 
+721	['NormalWeb']	The system can manage queues for Accounting/Cashier, Registrar, ITM, and Admission. Clients can obtain Regular or Priority tickets through the kiosk, and their tickets are automatically placed in the corresponding queue. 
+722	['NormalWeb']	The system can follow a 4 Priority to 2 Regular serving sequence. This provides appropriate accommodation for Priority clients while helping prevent Regular clients from being continuously delayed when the Priority queue becomes longer. 
+723	['NormalWeb']	The system provides a Main Admin account for overall administration and four Department Head Admin accounts for Accounting/Cashier, Registrar, ITM, and Admission. Department Head Admins are given access to administrative functions related to their own department, while the Main Admin can monitor the system. 
+724	['NormalWeb']	The system also provides three intelligent behaviours: Predicted Waiting Time, Peak Hour Prediction, and Smart Queue Congestion Risk. Predicted Waiting Time provides an estimate of how long clients may wait based on current queue conditions and recent service performance. Peak Hour Prediction estimates the busiest upcoming period using historical queue arrivals and recent activity. Smart Queue Congestion Risk evaluates queue length, arrival rate, service rate, active windows, and queue trends to determine the current congestion risk and provide a recommended action. 
+725	['NormalWeb']	Aside from these functions, the system can store queue and transaction records, generate reports, display analytics and KPIs, show called tickets through the queue display board, and print physical queue tickets using the thermal receipt printer. 
+726	['NormalWeb']	
+727	['NormalWeb']	Limitations 
+728	['NormalWeb']	The system was specifically developed based on the requirements and queuing operations of Lyceum of Alabang. Its departments, transactions, user accounts, queue rules, and other features are configured according to the scope of the project. Using the system in another institution may require changes to its existing configuration and functions. 
+729	['NormalWeb']	The current queue process follows the implemented 4 Priority to 2 Regular sequences. The system follows this serving arrangement unless the queue logic is changed or updated. 
+730	['NormalWeb']	The four Department Head Admin accounts have restricted access compared with the Main Admin. Each Department Head Admin can only access the information and administrative functions assigned to their department. This restriction is part of the system's role-based access structure. 
+731	['NormalWeb']	The three intelligent behaviours also depend on the available queue and historical data. For example, Peak Hour Prediction may not provide a reliable prediction when there are not enough historical records. Predicted Waiting Time may also change depending on the current number of waiting clients, available windows, and recent service performance. Likewise, the congestion risk assessment depends on the queue conditions recorded by the system. Because of this, these features provide estimates and decision-support information rather than guaranteed outcomes. The system depends on the proper operation of its database, server, network, kiosk, display, and thermal printer. Hardware or connection problems may temporarily affect some of the system's functions until the issue is resolved. 
+732	[]	
+733	[]	
+734	[]	Evaluation Result
+735	[]	MaintainabilityWeight meanInterpretationFunctional Suitability3.94Very GoodUsability4.14Very GoodReliability4.63Very GoodOverall4.25Very Good
+736	[]	Table 3. Summary of Software Evaluation Results by Client Respondents
+737	[]	
+738	[]	MaintainabilityWeight meanInterpretationFunctional Suitability4.57ExcellentPerformance Efficiency4.70ExcellentCompatibility4.35Very GoodUsability4.14Very GoodReliability4.35Very GoodSecurity4.62ExcellentMaintainability4.56ExcellentPortability4.67ExcellentOverall4.35Very Good
+739	[]	Table 4. Summary of Software Evaluation Results by IT Experts
+740	[]	
+741	[]	
+742	[]	MaintainabilityWeight meanInterpretationFunctional Suitability4.07Very GoodPerformance Efficiency4.70ExcellentCompatibility4.35Very GoodUsability4.14Very GoodReliability4.57ExcellentSecurity4.62ExcellentMaintainability4.56ExcellentPortability4.67ExecellentOverall Evaluation4.30Very Good
+743	[]	Table 5. Overall Software Evaluation Results Based on ISO/IEC 25010:2011 Quality Characteristics
+744	[]	
+745	[]	
+746	[]	
+747	[]	
+748	[]	
+749	[]	
+750	[]	
+751	[]	
+752	[]	
+753	[]	
+754	[]	Chapter 5
+755	[]	CONCLUSIONS AND RECOMMENDATIONS
+756	[]	Summary of Findings
+757	[]	This study focused on the development of an Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang. The system was developed to improve the existing queuing process by providing automated ticket generation, organized queue management, real-time monitoring, and service performance evaluation. It was designed to support four departments, namely Accounting/Cashier, Registrar, ITM, and Admission, while providing a more organized and convenient queuing experience for clients and staff.
+758	[]	The developed system provides a kiosk-based interface that allows clients to select their department, choose their transaction, and generate Regular or Priority queue tickets. The system stores queue information in a centralized database, allowing staff to monitor and process transactions according to their assigned departments. The digital queue display board and audio announcements also provide clients with updated information about the tickets currently being served and their assigned service windows. These features support a more systematic approach to managing queue transactions and reduce the need for manual queue handling.
+759	[]	To maintain a balanced serving process, the system implements a 4 Priority to 2 Regular queue sequence. Under this arrangement, four Priority clients are served followed by two Regular clients when both queue classifications have waiting clients. This feature is designed to prevent Regular clients from being continuously delayed during periods of high Priority queue volume while maintaining appropriate accommodation for qualified Priority clients. The serving arrangement provides a structured approach to managing both queue classifications within the supported departments.
+760	[]	The system also provides different levels of administrative access through the Main Admin and four separate Department Head Admin accounts. The Main Admin is responsible for monitoring and managing the overall system, including queue activities, staff information, analytics, reports, and performance across all four departments. Meanwhile, each Department Head Admin is assigned to one specific department, namely Accounting/Cashier, Registrar, ITM, or Admission. These accounts provide administrative functions similar to those of the Main Admin, but their access is restricted to the information and operations of their assigned departments. This structure supports centralized supervision while allowing each department to manage and monitor its own queue activities.
+761	[]	Furthermore, the system integrates three intelligent behaviors consisting of Predicted Waiting Time, Peak Hour Prediction, and Smart Queue Congestion Risk. Predicted Waiting Time estimates how long clients may need to wait based on the current queue, active service windows, and recent service performance. Peak Hour Prediction uses historical queue records and recent activities to identify possible busy periods. Smart Queue Congestion Risk evaluates factors such as queue length, arrival rate, service rate, available windows, and queue trends to assess congestion conditions and provide recommended actions. These features provide the Main Admin with an overall view of the four departments, while Department Head Admins can access intelligence information relevant to their assigned departments. The resulting estimates and assessments help support informed operational decisions, although their reliability depends on the availability of sufficient and accurate queue data.
+762	[]	The system provides Service Performance Analytics and Key Performance Indicator (KPI) Monitoring to evaluate recorded queue activities and service operations. These functions present information such as queue volume, waiting time, service time, completed transactions, peak periods, and service-window performance. Through these features, administrators can review the performance of different departments and identify areas that may require improvement. The integration of analytics and KPI monitoring allows the system to provide not only automated queue processing but also measurable information that supports service performance evaluation.
+763	[]	The system underwent Alpha Testing and Beta Testing to assess its functionality, usability, reliability, and overall performance. Based on the evaluation results presented in Chapter 4, the clients’ overall weighted mean was 4.25, interpreted as Very Good, while the IT experts’ overall weighted mean was reported as 4.35, also interpreted as Very Good. The consolidated evaluation produced an overall weighted mean of 4.30, interpreted as Very Good. Among the evaluated characteristics, Performance Efficiency received a weighted mean of 4.70, Security received 4.62, and Reliability received 4.57, all interpreted as Excellent. These results indicate that the system received favorable evaluations based on the criteria used in the study.
+764	[]	The findings indicate that the Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring provides an integrated approach to automated queue processing, department-based administration, intelligent queue monitoring, and service performance evaluation. The inclusion of four departments, separate administrative access, a balanced Regular and Priority serving sequence, and three intelligent behaviors supports the system’s objective of providing a more organized, transparent, and data-driven queuing process for Lyceum of Alabang.
+765	[]	
+766	[]	Conclusions
+767	[]	Based on the findings of the study, the researchers concluded that the Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring provides a practical solution for improving the organization and management of administrative queues at Lyceum of Alabang. By integrating kiosk-based ticket generation, automated queue processing, digital queue displays, and centralized monitoring, the system provides an alternative to manual queuing procedures and supports a more structured service process.
+768	[]	The implementation of the 4 Priority to 2 Regular serving sequence establishes a defined approach to balancing Priority and Regular transactions. This arrangement is intended to maintain appropriate service consideration for qualified Priority clients while helping prevent Regular clients from being continuously delayed when Priority demand increases.
+769	[]	The inclusion of Accounting/Cashier, Registrar, ITM, and Admission expands the system’s coverage across four school departments. Furthermore, the separation between the Main Admin and Department Head Admin accounts establishes clear administrative responsibilities. The Main Admin maintains overall control and monitoring of the system, while each Department Head Admin is limited to managing and reviewing information relevant to the assigned department. This provides a more organized approach to administrative access and department-level supervision.
+770	[]	The integration of Predicted Waiting Time, Peak Hour Prediction, and Smart Queue Congestion Risk also strengthens the system’s monitoring capabilities. These intelligent behaviors provide estimates, forecasts, and risk assessments that may help administrators identify possible service delays, anticipate busy periods, and assess queue congestion. However, the accuracy and usefulness of these features depend on the availability and quality of recorded queue and historical data.
+771	[]	Moreover, the system’s analytics and KPI monitoring features provide administrators with measurable information about queue activities and service performance. The recorded information can support the identification of operational concerns, monitoring of service efficiency, and assessment of areas that may require improvement.
+772	[]	The overall evaluation result of 4.30, interpreted as Very Good, indicates that the system received a favorable assessment based on the evaluation criteria used in the study. The results support the suitability of the system for its intended queuing functions, although continued testing and evaluation are necessary to establish its effectiveness under different operating conditions.
+773	[]	Therefore, the researchers concluded that the developed Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring can support a more organized, transparent, and data-driven approach to managing queues at Lyceum of Alabang. Its combination of automated queue processing, department-based administration, predictive information, and service performance monitoring provides a foundation for further improvements in the institution’s administrative service delivery.
+774	[]	
+775	[]	Recommendations
+776	[]	The researchers recommend the following improvements and considerations to further enhance the functionality, reliability, and effectiveness of the Intelligent Queuing Management System with Integrated Service Performance Analytics and 
+777	[]	KPI Monitoring:
+778	['ListParagraph']	Continuous System Maintenance and Improvement.
+779	['ListParagraph']	The researchers recommend conducting regular system maintenance, software updates, database checks, and performance testing to ensure that the system continues to operate properly. Identified technical issues should be addressed to maintain accurate queue information, reliable synchronization, and consistent functionality across all modules.
+780	['ListParagraph']	Further Evaluation of the 4 Priority to 2 Regular Serving Sequence.
+781	['ListParagraph']	The implemented queue arrangement should be evaluated during actual high-volume operations to determine whether it provides an appropriate balance between Priority and Regular clients. The researchers recommend monitoring the waiting times of both queue classifications and considering adjustments to the serving sequence when necessary, while maintaining the required accommodation of qualified Priority clients.
+782	['ListParagraph']	Continued Improvement of Department-Based Administration.
+783	['ListParagraph']	The Main Admin and the four Department Head Admin accounts should be maintained with clearly defined access permissions. Department Head Admins should only be permitted to access the queue records, analytics, reports, staff information, and operational functions associated with their assigned departments. Regular reviews of access permissions are recommended to maintain security, accountability, and proper separation of responsibilities.
+784	['ListParagraph']	Optimization of the Three Intelligent Behaviors.
+785	['ListParagraph']	The Predicted Waiting Time, Peak Hour Prediction, and Smart Queue Congestion Risk features should be continuously improved using additional recorded queue and transaction data. The researchers recommend evaluating the accuracy of waiting-time estimates, collecting sufficient historical information for peak-hour forecasting, and reviewing congestion risk assessments against actual queue conditions. This would help improve the usefulness and reliability of the system’s intelligent monitoring features.
+786	['ListParagraph']	Continuous Monitoring of the Four Departments.
+787	[]	The institution is encouraged to monitor the queuing performance of Accounting/Cashier, Registrar, ITM, and Admission regularly. Department-specific analytics and KPI results should be reviewed to identify service delays, queue congestion, and service-window performance concerns. This would allow department heads and the Main Admin to make informed adjustments based on recorded operational information.
+788	['ListParagraph']	Improvement of System Hardware and Network Reliability.
+789	['ListParagraph']	The researchers recommend ensuring that the kiosk, Mini PC, touchscreen monitor, thermal receipt printer, server, and connected computers are properly maintained. A stable Local Area Network and reliable database connection should also be maintained to prevent interruptions in ticket generation, queue processing, and real-time information updates. Appropriate backup and recovery procedures should be established to protect important system records.
+790	['ListParagraph']	Regular User Training and System Orientation.
+791	[]	The institution is encouraged to provide proper orientation and training to the Main Admin, Department Head Admins, staff members, and security personnel. This should include the correct use of queue management functions, Priority authorization, department-specific access, analytics, reporting, and intelligent monitoring features. Proper training can help reduce operational errors and improve the consistency of system use.
+792	['ListParagraph']	Further Testing and User Evaluation.
+793	['ListParagraph']	Additional system evaluations are recommended with more respondents from all four departments, particularly ITM and Admission, to assess department-specific functionality, usability, and performance. Testing should also include scenarios involving a high number of clients, simultaneous ticket requests, multiple active service windows, and periods of increased Priority queue demand. These evaluations may help identify limitations not fully captured during the initial testing.
+794	['ListParagraph']	Future System Expansion and Integration.
+795	[]	Future researchers may consider enhancing the system through optional features such as online appointment scheduling, mobile queue-status viewing, and integration with other institutional information systems, subject to the school’s requirements and data security policies. Such improvements may increase accessibility and convenience while expanding the system beyond its current local queuing functions.
+796	[]	10. Proposed System Deployment in the Registrar Department.
+797	[]	           The researchers recommend the proposed deployment of the Intelligent Queuing Management System in the Registrar Department of Lyceum of Alabang, as the department has expressed interest in adopting the system and recognized its potential to significantly assist their daily operations. The system is expected to help improve queue organization, manage Regular and Priority clients, automate student identification and service window assignment, and provide efficient queue monitoring. Before full implementation, the researchers recommend conducting final system testing, hardware and network verification, and staff orientation to ensure operational readiness. An initial pilot deployment is also recommended to assess the system's effectiveness in actual Registrar operations and identify any necessary improvements.
+798	[]	
+799	[]	
+800	[]	
+801	[]	
+802	[]	
+803	[]	
+804	[]	References:
+805	[]	[1] M. D. Santos and L. P. Gutierrez, “Analysis of Queuing Processes in Academic Administrative Offices During Peak Enrollment Periods,” Philippine Journal of Education and Technology, vol. 12, no. 2, pp. 45–52, 2021. https://ijrti.org/papers/IJRTI2509140.pdf
+806	[]	
+807	[]	[2] K. Batcharo et al., “The Role of Smart Queue Management Systems in Enhancing Customer Flow and Service Quality,” International Journal for Research Trends and Innovation (IJRTI), vol. 10, no. 9, 2025. https://ijrti.org/papers/IJRTI2509140.pdf
+808	[]	
+809	[]	[3] R. S. Rao, A. Kumar, and P. Sharma, “Smart Queue Management Systems in Service Environments: Improving Waiting Time and Customer Satisfaction,” International Journal of Engineering Research and Applications, vol. 15, no. 4, 2024. https://www.ijera.com/papers/Vol14_issue4/1404135145.pdf
+810	[]	
+811	[]	[4] J. A. M. Author et al., “e-hAC: Interactive Health Access Card Dispenser Kiosk to Aid Outpatient Queuing in Jose Reyes Memorial Medical Center,” in Proc. 2021 IEEE 13th Int. Conf. on HNICEM, Manila, Philippines, 2021. https://ieeexplore.ieee.org/document/9731990
+812	[]	
+813	[]	[5] P. J. N. Paver and R. M. Pabelona Jr., “Hospital Queuing System with Smart Kiosk,” International Journal of Computational Engineering Research (IJCER), vol. 14, no. 4, 2024. https://www.ijceronline.com/papers/Vol14_issue4/1404135145.pdf
+814	[]	
+815	[]	[6] D. Author, “Implementation of Kiosk-Based Queue Management System in Public Service Institutions,” International Journal of Innovative Research in Technology (IJIRT), 2023. https://ijirt.org/publishedpaper/IJIRT162345_PAPER.pdf
+816	[]	
+817	[]	[7] G. Espinosa, M. Serrano, and H. Balmes, “Automated Enrollment Queueing System in a University Towards Client Experience and Operational Efficiency,” MSEUF Research Studies, vol. 21, no. 1, Sep. 30, 2024. https://mseuf.edu.ph/research/publications/automated-enrollment-queueing-system-in-a-university-towards-Client-experience-and-operational-efficiency
+818	[]	
+819	[]	[8] Provincial Government of Laguna, “Laguna Medical Center Queuing Management System,” 2022. https://queuetech.co/goverments-queue-management-system :contentReference[oaicite:0]{index=0}
+820	[]	
+821	[]	[9] I. Petalino, “Water Level Monitoring System for Flood Prone Areas with Data Analytics,” 2021. https://www.researchgate.net/publication/Water_Level_Monitoring_System
+822	[]	
+823	[]	[10] A. J. Borje et al., “Improved Cashier Queueing System,” University of the Immaculate Conception, 2022. 
+824	[]	https://www.researchgate.net/publication/Improved_Cashier_Queueing_System
+825	[]	
+826	[]	[11] J. M. Santos et al., “Queueing Management System for Jeepney Terminal,” 2022.https://www.researchgate.net/publication/Queueing_Management_System_Jeepney_Terminal
+827	[]	
+828	[]	[12] “The Role of Smart Queue Management Systems in Enhancing Customer Flow and Service Quality,” 2025. 
+829	[]	https://www.isarsoft.com/article/smart-queue-management-the-definitive-guide :contentReference[oaicite:1]{index=1}
+830	[]	
+831	[]	[13] “Cloud-Based Intelligent Queue Management System with Predictive Analysis for Wait Times,” 2025. 
+832	[]	https://blog.qwaiting.com/digital-queue-system-transforms-public-service/ :contentReference[oaicite:2]{index=2}
+833	[]	
+834	[]	[14] “NoQ – Real-Time Queue Management Software,” 2023. 
+835	[]	https://www.habilelabs.io/products/qease :contentReference[oaicite:3]{index=3}
+836	[]	
+837	[]	[15] J. Ndiaye et al., “Development of an Intelligent Queue Manager That Takes Account of the Social and Health Context,” 2023. https://smart-queue-manage-system.vercel.app/ :contentReference[oaicite:4]{index=4}
+838	[]	
+839	[]	[16] H. N. Shaikh and S. Siddavatam, “GovQueue: A Queue Management and Token Generation System for Public Offices,”  International Journal for Multidisciplinary Research, vol. 8, no. 1, 2026. https://www.ijfmr.com/papers/2026/1/67722.pdf
+840	[]	
+841	[]	
+842	[]	
+843	[]	APPENDICES
+844	[]	Appendix A
+845	[]	Communications and Transcript of Interviews
+846	[]	A.1 Letter of Request to Conduct Capstone System Evaluation (Cashier Office)
+847	[]	
+848	[]	A.2 Letter of Request to Conduct Capstone System Evaluation (ITM Office)
+849	[]	
+850	[]	
+851	[]	A.3 Letter of Request to Conduct Capstone System Evaluation (Registrar Office)
+852	[]	
+853	[]	A.4 Proposed Analytics and KPIs (Registrar Office)
+854	[]	
+855	[]	A.5 Proposed Analytics and KPIs (Cashier Office)
+856	[]	
+857	[]	Appendix B
+858	[]	Language Editor Certification
+859	[]	
+860	[]	
+861	[]	LANGUAGE CERTIFICATION
+862	[]	
+863	[]	This is to certify that the research study entitled “An Intelligent Queuing Management System with Integrated Service Performance Analytics And KPI Monitoring In Lyceum Of Alabang”, authored by Aquino, Lavinia Faye G., Garcia, Erich Mae A., Nacario, Zhildjian Kurt D., Obeal, Rydner S., Vilda, Gerry C. was thoroughly edited in form and content by the undersigned.
+864	[]	
+865	[]	
+866	[]	NAME OF THE LANGUAGE EDITOR
+867	[]	Signature over Printed Name
+868	[]	
+869	[]	Noted by:
+870	[]	
+871	[]	
+872	[]	NEIL CELESTINO M. OCHOA, LPT
+873	[]	Director, CRID
+874	[]	
+875	[]	
+876	[]	
+877	[]	
+878	[]	
+879	[]	
+880	[]	
+881	[]	Appendix C
+882	[]	AI Declaration
+883	[]	PROOF OF COMPLIANCEFROMThe kiosk allows clients to select their department and transaction before generating a queue ticket. It supports Regular and Priority processing across Cashier, Registrar, ITM, and Admission. Priority requests require security authorization. Printed tickets help clients follow their assigned queue.(Generated by AI)TOThe kiosk serves as the client-facing interface for Accounting/Cashier, Registrar, ITM, and Admission. Clients enter the required information or proceed as guests, select a department and transaction, and request a Regular or Priority ticket. Designated security personnel verify eligibility and authorize Priority requests through a PIN-protected interface. The kiosk then generates a printed ticket for service routing and queue tracking.(Revision made by the Authors)Erich Mae A. GarciaSignature over Printed Name
+884	[]	
+885	[]	PROOF OF COMPLIANCE(Prompt of the Author)“Write a short paragraph describing the kiosk-based queue ticket generation in our Intelligent Queuing Management System at Lyceum of Alabang. Include the four departments, Regular and Priority tickets, and security authorization.”AI-Generated Results“The kiosk allows clients to select their department and transaction before generating a queue ticket. It supports Regular and Priority processing across Cashier, Registrar, ITM, and Admission. Priority requests require security authorization. Printed tickets help clients follow their assigned queue.”Erich Mae A. GarciaSignature over Printed Name
+886	[]	
+887	[]	Appendix D
+888	[]	IMRD Journal
+889	[]	AN INTELLIGENT QUEUING MANAGEMENT SYSTEM WITH INTEGRATED SERVICE PERFORMANCE ANALYTICS AND KPI MONITORING IN LYCEUM OF ALABANG
+890	[]	Aquino, Lavinia Faye G.; Garcia, Erich Mae A.; Nacario, Zhildjian Kurt D.; Obeal, Rydner S.; Vilda, Gerry C.
+891	[]	College of Computer Studies, Lyceum of Alabang
+892	[]	2026
+893	[]	ABSTRACT
+894	[]	This study developed an Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring for Lyceum of Alabang to address manual queue handling, waiting times, and congestion. Using Agile methodology, the researchers built kiosk-based Regular and Priority ticketing, a digital queue display, administrative monitoring, analytics, and reporting for Accounting/Cashier, Registrar, ITM, and Admission. A 4 Priority to 2 Regular serving sequence aims to prevent prolonged Regular queue delays. The system includes a Main Admin for overall operations and four Department Head Admins with department-specific access. Its three intelligent behaviors Predicted Waiting Time, Peak Hour Prediction, and Smart Queue Congestion Risk provide operational estimates and assessments. Alpha and Beta Testing were conducted, and Chapter 4 reports an overall evaluation weighted mean of 4.30, interpreted as Very Good. The system offers a structured, data-supported approach to queue management, although predictive accuracy requires further validation.
+895	[]	
+896	[]	INTRODUCTION
+897	[]	Administrative offices in educational institutions handle enrollment, payments, document requests, and other services. Manual queuing can lead to long waits, congestion, unclear service order, and limited performance monitoring. These concerns create a need for automated ticket processing and reliable service information.
+898	[]	The researchers developed an Intelligent Queuing Management System for Lyceum of Alabang that combines kiosk ticketing, Regular and Priority queue processing, staff panels, live queue displays, and administrative analytics. The system aims to support orderly service delivery and measurable performance monitoring.
+899	[]	The system supports Accounting/Cashier, Registrar, ITM, and Admission. Its 4 Priority to 2 Regular serving sequence is intended to accommodate qualified Priority clients while ensuring Regular clients continue to be served. A Main Admin oversees the entire system; four Department Head Admins have access restricted to their respective departments.
+900	[]	Three intelligent behaviors provide decision support: Predicted Waiting Time estimates queue delays; Peak Hour Prediction forecasts busy periods using historical arrivals; and Smart Queue Congestion Risk assesses queue length, arrival and service rates, active windows, and queue trends. This study developed and evaluated these functions alongside analytics and KPI monitoring.
+901	[]	
+902	[]	METHODS
+903	[]	Research and Development Approach
+904	[]	The study used Agile methodology, covering requirements gathering, system design, iterative development, testing, and improvement. Observations, interviews, and document analysis informed requirements for queue sequencing, Priority authorization, and service operations.
+905	[]	System design included interface prototypes, database relationships, and diagrams such as UML, DFD, and ERD. Development iterations implemented the kiosk, staff panels, display board, admin features, and intelligence functions.
+906	[]	System Development and Architecture
+907	[]	The front end was developed in React, the back end in PHP, and the centralized database in MySQL. A Mini PC powers the kiosk and connects to a touchscreen and thermal printer. Staff computers, admin interfaces, and the queue display communicate over a local area network.
+908	[]	The kiosk generates Regular or security-authorized Priority tickets. Staff can call, complete, or skip tickets, while the display board shows serving numbers and window assignments. The administrative modules offer department-filtered monitoring, reporting, analytics, and intelligent assessments.
+909	[]	Testing and Evaluation
+910	[]	Alpha Testing checked functional behavior and identified defects during development. Beta Testing gathered feedback from selected users on functionality, usability, and reliability.
+911	[]	
+912	[]	The methodology lists nineteen purposively selected respondents: fifteen clients, one Registrar staff member, one Cashier staff member, one security guard, and one IT expert. Evaluation procedures describe open-ended interviews and Chapter 4 reports software-quality weighted means.
+913	[]	
+914	[]	RESULTS
+915	[]	Integrated Queuing Operations
+916	[]	The system integrates kiosk ticket generation, staff queue processing, printed tickets, digital announcements, monitoring, and database-backed records for Accounting/Cashier, Registrar, ITM, and Admission.
+917	[]	A 4 Priority to 2 Regular sequence structures service order when both queues have waiting clients. The Main Admin handles overall administration, while the four Department Head Admins can access only their assigned departments.
+918	[]	
+919	[]	System Intelligence and Performance Monitoring
+920	[]	Predicted Waiting Time estimates likely delays from current queues, available windows, and service history. Peak Hour Prediction uses historical arrivals to identify busy periods, but may be unavailable with insufficient data. Smart Queue Congestion Risk assesses queue length, arrival rate, service rate, active windows, and queue trends, then presents a risk level and suggested action.
+921	[]	Analytics and KPI monitoring summarize ticket volume, waiting and service times, completed transactions, peak periods, and window performance to support administrative review.
+922	[]	
+923	[]	System Evaluation Results
+924	[]	Chapter 4 reports the following consolidated system evaluation scores:
+925	[]	Evaluation CriteriaWeighted MeanInterpretationFunctional Suitability4.07Very GoodPerformance Efficiency4.70ExcellentCompatibility4.35Very GoodUsability4.14Very GoodReliability4.57ExcellentSecurity4.62ExcellentMaintainability4.56ExcellentPortability4.67ExcellentOverall Evaluation4.30Very Good
+926	[]	
+927	[]	Client evaluation reported 4.25 (Very Good), while the IT expert evaluation reported 4.35 (Very Good). Chapter 4 gives a consolidated weighted mean of 4.30 (Very Good), indicating favorable assessments under the reported criteria.
+928	[]	
+929	[]	DISCUSSION
+930	[]	The developed system integrates queue ticketing with department-based monitoring, analytics, and predictive assessments. A centralized database helps synchronize kiosk, staff, display, and administrative information.
+931	[]	The 4 Priority to 2 Regular sequence seeks to balance service priority and Regular client access, but actual waiting-time improvements need further measurement during busy periods.
+932	[]	Four-department coverage and restricted Department Head Admin access support local oversight while preserving overall supervision by the Main Admin.
+933	[]	The intelligence features provide estimates and risk information rather than guaranteed outcomes. In particular, peak-hour forecasts depend on sufficient historical data, and predicted waits can change with queue conditions.
+934	[]	The overall rating of 4.30 (Very Good) is encouraging, but evaluation ratings alone do not prove reduced waiting time or forecasting accuracy. Continued operational testing is warranted.
+935	[]	
+936	[]	CONCLUSIONS
+937	[]	The researchers concluded that the system provides a functional approach to automated queue processing and performance monitoring at Lyceum of Alabang. It combines kiosk ticketing, queue displays, administration, and analytics in one platform.
+938	[]	Four-department support, the 4 Priority to 2 Regular sequence, and separate Main Admin and Department Head Admin access establish defined operational processes. The three intelligence features supplement monitoring with estimates and risk assessments.
+939	[]	The consolidated evaluation was 4.30 (Very Good). The results support the system’s intended application while indicating the need for further testing under actual high-volume conditions.
+940	[]	RECOMMENDATIONS
+941	[]	Regular maintenance, database checks, reliable networking, and hardware inspections are recommended. The 4 Priority to 2 Regular sequence should be evaluated during peak demand to assess waiting times for both queue types.
+942	[]	Administrative permissions should be reviewed to protect department-specific records. Additional historical data should be collected and predicted waiting times, peak hours, and congestion assessments compared with actual outcomes.
+943	[]	Further evaluation should involve ITM and Admission users and busy operating conditions. Future work may explore appointment scheduling, mobile queue tracking, and integration with other authorized institutional systems.
+944	[]	
+945	[]	REFERENCES
+946	[]	[1] M. D. Santos and L. P. Gutierrez, “Analysis of Queuing Processes in Academic Administrative Offices During Peak Enrollment Periods,” Philippine Journal of Education and Technology, vol. 12, no. 2, pp. 45–52, 2021. https://ijrti.org/papers/IJRTI2509140.pdf
+947	[]	
+948	[]	[2] K. Batcharo et al., “The Role of Smart Queue Management Systems in Enhancing Customer Flow and Service Quality,” International Journal for Research Trends and Innovation (IJRTI), vol. 10, no. 9, 2025. https://ijrti.org/papers/IJRTI2509140.pdf
+949	[]	
+950	[]	[3] R. S. Rao, A. Kumar, and P. Sharma, “Smart Queue Management Systems in Service Environments: Improving Waiting Time and Customer Satisfaction,” International Journal of Engineering Research and Applications, vol. 15, no. 4, 2024. https://www.ijera.com/papers/Vol14_issue4/1404135145.pdf
+951	[]	
+952	[]	[4] J. A. M. Author et al., “e-hAC: Interactive Health Access Card Dispenser Kiosk to Aid Outpatient Queuing in Jose Reyes Memorial Medical Center,” in Proc. 2021 IEEE 13th Int. Conf. on HNICEM, Manila, Philippines, 2021. https://ieeexplore.ieee.org/document/9731990
+953	[]	
+954	[]	[5] P. J. N. Paver and R. M. Pabelona Jr., “Hospital Queuing System with Smart Kiosk,” International Journal of Computational Engineering Research (IJCER), vol. 14, no. 4, 2024. https://www.ijceronline.com/papers/Vol14_issue4/1404135145.pdf
+955	[]	
+956	[]	[6] D. Author, “Implementation of Kiosk-Based Queue Management System in Public Service Institutions,” International Journal of Innovative Research in Technology (IJIRT), 2023. https://ijirt.org/publishedpaper/IJIRT162345_PAPER.pdf
+957	[]	
+958	[]	[7] G. Espinosa, M. Serrano, and H. Balmes, “Automated Enrollment Queueing System in a University Towards Client Experience and Operational Efficiency,” MSEUF Research Studies, vol. 21, no. 1, Sep. 30, 2024. https://mseuf.edu.ph/research/publications/automated-enrollment-queueing-system-in-a-university-towards-Client-experience-and-operational-efficiency
+959	[]	
+960	[]	[8] Provincial Government of Laguna, “Laguna Medical Center Queuing Management System,” 2022. https://queuetech.co/goverments-queue-management-system :contentReference[oaicite:0]{index=0}
+961	[]	
+962	[]	[9] I. Petalino, “Water Level Monitoring System for Flood Prone Areas with Data Analytics,” 2021. https://www.researchgate.net/publication/Water_Level_Monitoring_System
+963	[]	
+964	[]	[10] A. J. Borje et al., “Improved Cashier Queueing System,” University of the Immaculate Conception, 2022. 
+965	[]	https://www.researchgate.net/publication/Improved_Cashier_Queueing_System
+966	[]	
+967	[]	[11] J. M. Santos et al., “Queueing Management System for Jeepney Terminal,” 2022.https://www.researchgate.net/publication/Queueing_Management_System_Jeepney_Terminal
+968	[]	
+969	[]	[12] “The Role of Smart Queue Management Systems in Enhancing Customer Flow and Service Quality,” 2025. 
+970	[]	https://www.isarsoft.com/article/smart-queue-management-the-definitive-guide :contentReference[oaicite:1]{index=1}
+971	[]	
+972	[]	[13] “Cloud-Based Intelligent Queue Management System with Predictive Analysis for Wait Times,” 2025. 
+973	[]	https://blog.qwaiting.com/digital-queue-system-transforms-public-service/ :contentReference[oaicite:2]{index=2}
+974	[]	
+975	[]	[14] “NoQ – Real-Time Queue Management Software,” 2023. 
+976	[]	https://www.habilelabs.io/products/qease :contentReference[oaicite:3]{index=3}
+977	[]	
+978	[]	[15] J. Ndiaye et al., “Development of an Intelligent Queue Manager That Takes Account of the Social and Health Context,” 2023. https://smart-queue-manage-system.vercel.app/ :contentReference[oaicite:4]{index=4}
+979	[]	
+980	[]	[16] H. N. Shaikh and S. Siddavatam, “GovQueue: A Queue Management and Token Generation System for Public Offices,”  International Journal for Multidisciplinary Research, vol. 8, no. 1, 2026. https://www.ijfmr.com/papers/2026/1/67722.pdf
+981	[]	
+982	[]	
+983	[]	
+984	[]	Appendix E
+985	[]	Evaluation Tool (ISO Software Criteria)
+986	[]	
+987	['ListParagraph']	Software Evaluation Questionnaire for IT Experts
+988	[]	
+989	[]	
+990	[]	
+991	[]	
+992	[]	
+993	[]	
+994	[]	
+995	[]	
+996	[]	
+997	[]	
+998	[]	
+999	[]	
+1000	[]	
+1001	[]	
+1002	[]	
+1003	[]	
+1004	[]	
+1005	[]	
+1006	[]	
+1007	[]	B. Software Evaluation Questionnaire for Clients
+1008	[]	
+1009	[]	
+1010	[]	
+1011	[]	Appendix F
+1012	[]	Alpha Testing Form For Developers
+1013	[]	
+1014	[]	
+1015	[]	
+1016	[]	
+1017	[]	
+1018	[]	
+1019	[]	
+1020	[]	
+1021	[]	
+1022	[]	
+1023	[]	
+1024	[]	
+1025	[]	
+1026	[]	
+1027	[]	
+1028	[]	
+1029	[]	
+1030	[]	
+1031	[]	
+1032	[]	
+1033	[]	
+1034	[]	Appendix G
+1035	[]	Beta Testing Form For IT Professionals and Department Users
+1036	[]	System CriteriaYesNo1. Does the system load and operate without errors during the test?☐☐2. Are the menus, buttons, and labels clear and usable?☐☐3. Can clients select the correct department and transaction at the kiosk?☐☐4. Can student clients and guests obtain correctly identified queue tickets?☐☐5. Does Priority processing require security verification and PIN authorization?☐☐6. Are printed tickets readable and consistent with the requested service?☐☐7. Can authorized staff call, complete, skip, or mark tickets as no-show?☐☐8. Does the queue follow 4 Priority to 2 Regular when both classifications are waiting?☐☐9. Can assigned ITM backup staff process the unavailable office’s queue?☐☐10. Do the display board and audio calls match the ticket and service window?☐☐11. Can Main Admin view all departments while each head sees only the assigned department?☐☐12. Do dashboards and date filters retain the correct queue information?☐☐13. Do analytics and reports reflect the records checked during testing?☐☐14. Are waiting-time estimates, peak-hour forecasts, and congestion-risk information understandable?☐☐15. Do published display settings appear correctly on the display board?☐☐16. Does logout end access, and does the system remain stable during repeated transactions?☐☐
+1037	[]	
+1038	[]	
+1039	[]	
+1040	[]	
+1041	[]	
+1042	[]	
+1043	[]	
+1044	[]	
+1045	[]	Appendix H 
+1046	[]	Progress Reports
+1047	[]	
+1048	[]	
+1049	[]	
+1050	[]	
+1051	[]	Appendix I 
+1052	[]	 User’s Guide
+1053	[]	
+1054	[]	An Intelligent Queuing Management System with Integrated Service Performance Analytics and KPI Monitoring in Lyceum of Alabang
+1055	[]	Introduction
+1056	[]	          This User’s Guide provides step-by-step instructions for operating the Intelligent Queuing Management System of Lyceum of Alabang. The system supports Regular and Priority ticketing, queue monitoring, and service performance management across four departments: Registrar, Cashier, ITM, and Admission.
+1057	[]	The system includes a self-service kiosk, staff interface, Main Administrator dashboard, Department Head Administrator dashboards, and Queue Display Board.
+1058	[]	KIOSK USER GUIDE
+1059	[]	Step 1. Start the Kiosk
+1060	['ListParagraph']	Approach the touchscreen kiosk.
+1061	['ListParagraph']	Tap Tap to Begin.
+1062	['ListParagraph']	Wait for the system to display the next screen.
+1063	[]	Step 2. Select User Type
+1064	['ListParagraph']	Select Student or Guest.
+1065	[]	Students must enter their student number.
+1066	[]	Guests can continue without entering a student number.
+1067	[]	Step 3. Enter Student Number
+1068	[]	Enter the student number using the touchscreen keypad.
+1069	[]	Tap Done to continue.
+1070	[]	Select the department where the transaction will be processed.
+1071	[]	Step 4. Select Department
+1072	[]	Choose the appropriate department:
+1073	[]	Registrar
+1074	[]	Cashier
+1075	[]	ITM
+1076	[]	Admission
+1077	[]	Continue to the next screen.
+1078	[]	Step 5. Registrar Service for Students
+1079	[]	Select Registrar.
+1080	[]	The system automatically identifies the student's name and course.
+1081	[]	The appropriate Registrar window is automatically assigned based on the student's course.
+1082	[]	Continue with the queue ticket process.
+1083	[]	Step 6. Registrar Service for Guests
+1084	[]	Select Guest and choose Registrar.
+1085	[]	View the available Registrar windows and their corresponding courses.
+1086	[]	Select the appropriate window.
+1087	[]	Continue with the queue ticket process.
+1088	[]	Step 7. Select Ticket Type
+1089	[]	Choose Regular or Priority.
+1090	[]	Complete the required security verification when selecting Priority.
+1091	[]	Continue to the next screen.
+1092	[]	Step 8. Select Type of Transaction
+1093	[]	View the available transaction types.
+1094	[]	Select the appropriate transaction.
+1095	[]	Continue to ticket generation.
+1096	[]	Step 9. Receive Queue Ticket
+1097	[]	Wait for the queue ticket to be generated.
+1098	[]	Collect the printed ticket from the thermal printer.
+1099	[]	Check the queue number and department.
+1100	[]	Wait until the queue number is called.
+1101	[]	Step 10. Monitor Queue Status
+1102	[]	Observe the Queue Display Board.
+1103	[]	Wait for the queue number to appear.
+1104	[]	Proceed to the assigned service window when called.
+1105	[]	STAFF USER GUIDE
+1106	[]	Step 1. Staff Login
+1107	[]	Open the system login page.
+1108	[]	Enter the assigned username and password.
+1109	[]	Click Login.
+1110	[]	Step 2. View Waiting Queue
+1111	[]	Access the staff dashboard.
+1112	[]	Review the waiting queue and current ticket.
+1113	[]	Identify the next ticket to serve.
+1114	[]	Step 3. Call the Next Ticket
+1115	[]	Click the button to call the next ticket.
+1116	[]	View the current ticket information.
+1117	[]	The Queue Display Board updates the called number.
+1118	[]	Step 4. Complete or Skip Transaction
+1119	[]	Click Complete after serving the client.
+1120	[]	Click Skip/No Show if the client does not respond.
+1121	[]	The system updates the ticket status.
+1122	[]	Step 5. Manage Window Availability
+1123	[]	Open the Registrar staff interface.
+1124	[]	Select Close Window when the service window is unavailable.
+1125	[]	The kiosk displays the window as unavailable.
+1126	[]	Reopen the window when service resumes.
+1127	[]	Step 6. Use Mini View
+1128	[]	Activate Mini View.
+1129	[]	Monitor queue information through the compact interface.
+1130	[]	Move the Mini View to the preferred screen position.
+1131	[]	Return to the main staff interface when needed.
+1132	[]	MAIN ADMINISTRATOR USER GUIDE
+1133	[]	Step 1. Administrator Login
+1134	[]	Open the login page.
+1135	[]	Enter the Main Administrator credentials.
+1136	[]	Access the Main Administrator dashboard.
+1137	[]	Step 2. Monitor Overall Queue Performance
+1138	[]	Open the dashboard.
+1139	[]	View queue information from the four departments.
+1140	[]	Monitor waiting tickets, completed transactions, and service performance.
+1141	[]	Step 3. View Intelligent Queue Features
+1142	[]	View Predicted Waiting Time to monitor estimated waiting periods.
+1143	[]	View Peak Hour Prediction to identify expected busy periods.
+1144	[]	View Smart Queue Congestion Risk to identify possible queue congestion.
+1145	[]	Step 4. Access Analytics and KPI Monitoring
+1146	[]	Open the Analytics section.
+1147	[]	Review ticket volume, waiting time, service time, and completion rate.
+1148	[]	Examine staff performance, transaction statistics, and window utilization.
+1149	[]	Apply the available date filters.
+1150	[]	Step 5. Generate Reports
+1151	[]	Open the Reports section.
+1152	[]	Select the reporting period.
+1153	[]	Review the generated information.
+1154	[]	Export the report in PDF format.
+1155	[]	Step 6. Manage Staff Accounts
+1156	[]	Open Staff Management.
+1157	[]	View registered staff accounts.
+1158	[]	Select an account to edit its permitted information.
+1159	[]	Save the changes.
+1160	[]	Step 7. Configure System Settings
+1161	[]	Open Settings.
+1162	[]	Manage the Queue Display Board configuration.
+1163	[]	Update announcements and display information.
+1164	[]	Review the changes using the Live TV Preview.
+1165	[]	DEPARTMENT HEAD ADMINISTRATOR USER GUIDE
+1166	[]	Step 1. Department Head Login
+1167	[]	Open the login page.
+1168	[]	Enter the assigned Department Head Administrator credentials.
+1169	[]	Access the dashboard for the assigned department.
+1170	[]	The four Department Head Administrator accounts are:
+1171	[]	Registrar Head Administrator
+1172	[]	Cashier Head Administrator
+1173	[]	ITM Head Administrator
+1174	[]	Admission Head Administrator
+1175	[]	Step 2. Monitor Department Performance
+1176	[]	Open the department dashboard.
+1177	[]	View waiting tickets and completed transactions.
+1178	[]	Monitor staff and service performance within the assigned department.
+1179	[]	Step 3. View Intelligent Queue Features
+1180	[]	Review Predicted Waiting Time.
+1181	[]	Monitor Peak Hour Prediction.
+1182	[]	Check Smart Queue Congestion Risk.
+1183	[]	Use the information to support departmental queue management.
+1184	[]	Step 4. Access Department Analytics and Reports
+1185	[]	Open the available Analytics or Reports section.
+1186	[]	Review the performance indicators of the assigned department.
+1187	[]	Monitor staff performance and transaction statistics.
+1188	[]	Generate available reports when needed.
+1189	[]	QUEUE DISPLAY BOARD USER GUIDE
+1190	[]	Step 1. Open the Queue Display Board
+1191	[]	Open the Queue Display Board using the designated computer or monitor.
+1192	[]	Wait for the current queue information to appear.
+1193	[]	Step 2. Monitor Queue Announcements
+1194	[]	View the currently called queue numbers.
+1195	[]	Check the corresponding service windows.
+1196	[]	Read the displayed announcements.
+1197	[]	Monitor queue updates as staff process tickets.
+1198	[]	IMPORTANT REMINDERS
+1199	[]	Students must enter their correct student number.
+1200	[]	Guests selecting Registrar services must choose the appropriate window.
+1201	[]	Priority users must complete the required security verification.
+1202	[]	Clients must keep their printed queue tickets until their transactions are completed.
+1203	[]	Staff must use their assigned accounts and properly update ticket statuses.
+1204	[]	Administrators must regularly monitor queue performance and system information.
+1205	[]	The system and its connected devices must remain operational during queue processing.
+1206	[]	
+1207	[]	
+1208	[]	
+1209	[]	
+1210	[]	
+1211	[]	
+1212	[]	
+1213	[]	
+1214	[]	
+1215	[]	
+1216	[]	
+1217	[]	
+1218	[]	
+1219	[]	
+1220	[]	
+1221	[]	
+1222	[]	
+1223	[]	
+1224	[]	
+1225	[]	
+1226	[]	
+1227	[]	
+1228	[]	
+1229	[]	
+1230	[]	
+1231	[]	
+1232	[]	
+1233	[]	
+1234	[]	
+1235	[]	
+1236	[]	
+1237	[]	
+1238	[]	
+1239	[]	
+1240	[]	Appendix J 
+1241	[]	Test Results
+1242	[]	SOFTWARE EVALUATION CHARACTERISTICSExcellentVery GoodGoodFairPoorFUNCTIONALITYFunctional completeness211441Functional correctness241151Functional appropriateness27951RELIABILITYMaturity845Availability251231Fault tolerance201391Recoverability201371USABILITYAppropriateness recognizability2511421Learnability2213321Operability2214421User error protection10161111User interface aesthetics211171Accessibility30541PERFORMANCE EFFICIENCYTime behavior631Resource utilization73Capacity622COMPATIBILITYCo-existence541Interoperability451SECURITYIntegrity721Authenticity64MAINTAINABILITYModularity64Reusability64Analyzability631Modifiability631Testability721
+1243	[]	
+1244	[]	
+1245	[]	Appendix K
+1246	[]	Photo Ops (Data Gathering, Investigation, Evaluation)
+1247	[]	
+1248	[]	
+1249	[]	
+1250	[]	Figure 41. System Demonstration and Evaluation with the Cashier Office
+1251	[]	
+1252	[]	
+1253	[]	
+1254	[]	
+1255	[]	Figure 42. System Demonstration and Evaluation with the Registrar Office
+1256	[]	
+1257	[]	
+1258	[]	
+1259	[]	
+1260	[]	Figure 43. System Demonstration & Evaluation with the ITM Department
+1261	[]	
+1262	[]	
+1263	[]	
+1264	[]	Figure 44. System Demonstration and Evaluation Conducted with IT Experts and Students
+1265	[]	
+1266	[]	
+1267	[]	
+1268	[]	
+1269	[]	
+1270	[]	
+1271	[]	
+1272	[]	
+1273	[]	
+1274	[]	
+1275	[]	Appendix L
+1276	[]	Curriculum Vitae
+1277	[]	
+1278	[]	
+1279	[]	
+1280	[]	
+1281	[]	
+1282	[]	
+1283	[]	
+1284	[]	
+1285	[]	
+1286	[]	
+1287	[]	
+1288	[]	
+1289	[]	
+1290	[]	
+1291	[]	
+1292	[]	
+1293	[]	
+1294	[]	
+1295	[]	
+1296	[]	
+1297	[]	

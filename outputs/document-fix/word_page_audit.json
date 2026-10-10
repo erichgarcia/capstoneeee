@@ -1,0 +1,681 @@
+﻿[
+    {
+        "Bookmark":  "nav_37",
+        "Display":  "i",
+        "Page":  1,
+        "PhysicalPage":  1,
+        "Target":  "AN INTELLIGENT QUEUING MANAGEMENT SYSTEM WITH"
+    },
+    {
+        "Bookmark":  "nav_38",
+        "Display":  "ii",
+        "Page":  2,
+        "PhysicalPage":  2,
+        "Target":  "CERTIFICATE OF READINESS"
+    },
+    {
+        "Bookmark":  "nav_39",
+        "Display":  "iii",
+        "Page":  3,
+        "PhysicalPage":  3,
+        "Target":  "TABLE OF CONTENTS"
+    },
+    {
+        "Bookmark":  "nav_40",
+        "Display":  "vi",
+        "Page":  6,
+        "PhysicalPage":  6,
+        "Target":  "LIST OF FIGURES"
+    },
+    {
+        "Bookmark":  "nav_41",
+        "Display":  "ix",
+        "Page":  9,
+        "PhysicalPage":  9,
+        "Target":  "LIST OF TABLES"
+    },
+    {
+        "Bookmark":  "nav_43",
+        "Display":  "1",
+        "Page":  1,
+        "PhysicalPage":  10,
+        "Target":  "Chapter 1"
+    },
+    {
+        "Bookmark":  "nav_44",
+        "Display":  "1",
+        "Page":  1,
+        "PhysicalPage":  10,
+        "Target":  "Project Context"
+    },
+    {
+        "Bookmark":  "nav_45",
+        "Display":  "3",
+        "Page":  3,
+        "PhysicalPage":  12,
+        "Target":  "Purpose and Description"
+    },
+    {
+        "Bookmark":  "nav_46",
+        "Display":  "4",
+        "Page":  4,
+        "PhysicalPage":  13,
+        "Target":  "Objectives of the Study"
+    },
+    {
+        "Bookmark":  "nav_47",
+        "Display":  "7",
+        "Page":  7,
+        "PhysicalPage":  16,
+        "Target":  "Significance of the Study"
+    },
+    {
+        "Bookmark":  "nav_48",
+        "Display":  "9",
+        "Page":  9,
+        "PhysicalPage":  18,
+        "Target":  "Scope and Limitation"
+    },
+    {
+        "Bookmark":  "nav_50",
+        "Display":  "11",
+        "Page":  11,
+        "PhysicalPage":  20,
+        "Target":  "Chapter 2"
+    },
+    {
+        "Bookmark":  "nav_51",
+        "Display":  "12",
+        "Page":  12,
+        "PhysicalPage":  21,
+        "Target":  "Queuing Management Systems in Administrative Services"
+    },
+    {
+        "Bookmark":  "nav_52",
+        "Display":  "14",
+        "Page":  14,
+        "PhysicalPage":  23,
+        "Target":  "Kiosk-Based Queuing Systems"
+    },
+    {
+        "Bookmark":  "nav_53",
+        "Display":  "16",
+        "Page":  16,
+        "PhysicalPage":  25,
+        "Target":  "Related Systems"
+    },
+    {
+        "Bookmark":  "nav_54",
+        "Display":  "27",
+        "Page":  27,
+        "PhysicalPage":  36,
+        "Target":  "Synthesis"
+    },
+    {
+        "Bookmark":  "nav_55",
+        "Display":  "29",
+        "Page":  29,
+        "PhysicalPage":  38,
+        "Target":  "Conceptual Model Of The Study"
+    },
+    {
+        "Bookmark":  "nav_56",
+        "Display":  "32",
+        "Page":  32,
+        "PhysicalPage":  41,
+        "Target":  "Definition of Terms"
+    },
+    {
+        "Bookmark":  "nav_58",
+        "Display":  "37",
+        "Page":  37,
+        "PhysicalPage":  46,
+        "Target":  "Chapter 3"
+    },
+    {
+        "Bookmark":  "nav_59",
+        "Display":  "41",
+        "Page":  41,
+        "PhysicalPage":  50,
+        "Target":  "Requirements Analysis"
+    },
+    {
+        "Bookmark":  "nav_60",
+        "Display":  "51",
+        "Page":  51,
+        "PhysicalPage":  60,
+        "Target":  "Requirements Documentation"
+    },
+    {
+        "Bookmark":  "nav_61",
+        "Display":  "54",
+        "Page":  54,
+        "PhysicalPage":  63,
+        "Target":  "Design of Software, Systems, Product and/or Process User Interface Design"
+    },
+    {
+        "Bookmark":  "nav_62",
+        "Display":  "75",
+        "Page":  75,
+        "PhysicalPage":  84,
+        "Target":  "Testing Procedure"
+    },
+    {
+        "Bookmark":  "nav_63",
+        "Display":  "80",
+        "Page":  80,
+        "PhysicalPage":  89,
+        "Target":  "Evaluation Procedure"
+    },
+    {
+        "Bookmark":  "nav_64",
+        "Display":  "84",
+        "Page":  84,
+        "PhysicalPage":  93,
+        "Target":  "Chapter 4"
+    },
+    {
+        "Bookmark":  "nav_65",
+        "Display":  "84",
+        "Page":  84,
+        "PhysicalPage":  93,
+        "Target":  "Project Description"
+    },
+    {
+        "Bookmark":  "nav_66",
+        "Display":  "86",
+        "Page":  86,
+        "PhysicalPage":  95,
+        "Target":  "Project Structure"
+    },
+    {
+        "Bookmark":  "nav_67",
+        "Display":  "88",
+        "Page":  88,
+        "PhysicalPage":  97,
+        "Target":  "Capabilities And Limitations"
+    },
+    {
+        "Bookmark":  "nav_68",
+        "Display":  "90",
+        "Page":  90,
+        "PhysicalPage":  99,
+        "Target":  "Evaluation Result"
+    },
+    {
+        "Bookmark":  "nav_69",
+        "Display":  "92",
+        "Page":  92,
+        "PhysicalPage":  101,
+        "Target":  "Chapter 5"
+    },
+    {
+        "Bookmark":  "nav_70",
+        "Display":  "92",
+        "Page":  92,
+        "PhysicalPage":  101,
+        "Target":  "Summary of Findings"
+    },
+    {
+        "Bookmark":  "nav_71",
+        "Display":  "96",
+        "Page":  96,
+        "PhysicalPage":  105,
+        "Target":  "Conclusions"
+    },
+    {
+        "Bookmark":  "nav_72",
+        "Display":  "98",
+        "Page":  98,
+        "PhysicalPage":  107,
+        "Target":  "Recommendations"
+    },
+    {
+        "Bookmark":  "nav_73",
+        "Display":  "103",
+        "Page":  103,
+        "PhysicalPage":  112,
+        "Target":  "\fReferences:"
+    },
+    {
+        "Bookmark":  "nav_74",
+        "Display":  "106",
+        "Page":  106,
+        "PhysicalPage":  115,
+        "Target":  "APPENDICES"
+    },
+    {
+        "Bookmark":  "appendix_0",
+        "Display":  "106",
+        "Page":  106,
+        "PhysicalPage":  115,
+        "Target":  "Appendix A"
+    },
+    {
+        "Bookmark":  "appendix_1",
+        "Display":  "111",
+        "Page":  111,
+        "PhysicalPage":  120,
+        "Target":  "Appendix B"
+    },
+    {
+        "Bookmark":  "appendix_2",
+        "Display":  "112",
+        "Page":  112,
+        "PhysicalPage":  121,
+        "Target":  "Appendix C"
+    },
+    {
+        "Bookmark":  "appendix_3",
+        "Display":  "113",
+        "Page":  113,
+        "PhysicalPage":  122,
+        "Target":  "Appendix D"
+    },
+    {
+        "Bookmark":  "appendix_4",
+        "Display":  "124",
+        "Page":  124,
+        "PhysicalPage":  133,
+        "Target":  "Appendix E"
+    },
+    {
+        "Bookmark":  "appendix_5",
+        "Display":  "127",
+        "Page":  127,
+        "PhysicalPage":  136,
+        "Target":  "Appendix F"
+    },
+    {
+        "Bookmark":  "appendix_6",
+        "Display":  "129",
+        "Page":  129,
+        "PhysicalPage":  138,
+        "Target":  "Appendix G"
+    },
+    {
+        "Bookmark":  "appendix_7",
+        "Display":  "130",
+        "Page":  130,
+        "PhysicalPage":  139,
+        "Target":  "Appendix H "
+    },
+    {
+        "Bookmark":  "appendix_8",
+        "Display":  "131",
+        "Page":  131,
+        "PhysicalPage":  140,
+        "Target":  "Appendix I "
+    },
+    {
+        "Bookmark":  "appendix_9",
+        "Display":  "139",
+        "Page":  139,
+        "PhysicalPage":  148,
+        "Target":  "Appendix J "
+    },
+    {
+        "Bookmark":  "appendix_10",
+        "Display":  "140",
+        "Page":  140,
+        "PhysicalPage":  149,
+        "Target":  "Appendix K"
+    },
+    {
+        "Bookmark":  "appendix_11",
+        "Display":  "142",
+        "Page":  142,
+        "PhysicalPage":  151,
+        "Target":  "Appendix L"
+    },
+    {
+        "Bookmark":  "figure_1",
+        "Display":  "16",
+        "Page":  16,
+        "PhysicalPage":  25,
+        "Target":  "Figure 1. Automated Enrollment Queueing System Interface"
+    },
+    {
+        "Bookmark":  "figure_2",
+        "Display":  "17",
+        "Page":  17,
+        "PhysicalPage":  26,
+        "Target":  "Figure 2. Laguna Medical Center Queuing Management System Interface"
+    },
+    {
+        "Bookmark":  "figure_3",
+        "Display":  "18",
+        "Page":  18,
+        "PhysicalPage":  27,
+        "Target":  "Figure 3. Water Level Monitoring System Dashboard"
+    },
+    {
+        "Bookmark":  "figure_4",
+        "Display":  "19",
+        "Page":  19,
+        "PhysicalPage":  28,
+        "Target":  "Figure 4. Kiosk Device User Interface for Cashier Queuing System"
+    },
+    {
+        "Bookmark":  "figure_5",
+        "Display":  "20",
+        "Page":  20,
+        "PhysicalPage":  29,
+        "Target":  "Figure 5. Jeepney Terminal Queuing System Queue Page Interface"
+    },
+    {
+        "Bookmark":  "figure_6",
+        "Display":  "21",
+        "Page":  21,
+        "PhysicalPage":  30,
+        "Target":  "Figure 6. Smart Queue Management System Interfaces"
+    },
+    {
+        "Bookmark":  "figure_7",
+        "Display":  "22",
+        "Page":  22,
+        "PhysicalPage":  31,
+        "Target":  "Figure 7. Cloud-Based Intelligent Queue Management System Interfaces"
+    },
+    {
+        "Bookmark":  "figure_8",
+        "Display":  "24",
+        "Page":  24,
+        "PhysicalPage":  33,
+        "Target":  "Figure 8. NoQ Real-Time Queue Management System Interface"
+    },
+    {
+        "Bookmark":  "figure_9",
+        "Display":  "25",
+        "Page":  25,
+        "PhysicalPage":  34,
+        "Target":  "Figure 9. Intelligent Queue Management System Interfaces and Physical Setup"
+    },
+    {
+        "Bookmark":  "figure_10",
+        "Display":  "26",
+        "Page":  26,
+        "PhysicalPage":  35,
+        "Target":  "Figure 10. GovQueue System Interfaces (Citizen, Staff, and Admin Modules)"
+    },
+    {
+        "Bookmark":  "figure_11",
+        "Display":  "30",
+        "Page":  30,
+        "PhysicalPage":  39,
+        "Target":  "Figure 11. Conceptual Model of the Study"
+    },
+    {
+        "Bookmark":  "figure_12",
+        "Display":  "37",
+        "Page":  37,
+        "PhysicalPage":  46,
+        "Target":  "Figure 12. Agile Methodology of the Proposed System"
+    },
+    {
+        "Bookmark":  "figure_13",
+        "Display":  "46",
+        "Page":  46,
+        "PhysicalPage":  55,
+        "Target":  "Figure 13. System Block Diagram of the Proposed System"
+    },
+    {
+        "Bookmark":  "figure_14",
+        "Display":  "47",
+        "Page":  47,
+        "PhysicalPage":  56,
+        "Target":  "Figure 14. Context Diagram of the Proposed System"
+    },
+    {
+        "Bookmark":  "figure_15",
+        "Display":  "48",
+        "Page":  48,
+        "PhysicalPage":  57,
+        "Target":  "Figure 15. Data Flow Diagram of the Proposed System"
+    },
+    {
+        "Bookmark":  "figure_16",
+        "Display":  "50",
+        "Page":  50,
+        "PhysicalPage":  59,
+        "Target":  "Figure 16. Use Case Diagram of the Proposed System"
+    },
+    {
+        "Bookmark":  "figure_17",
+        "Display":  "54",
+        "Page":  54,
+        "PhysicalPage":  63,
+        "Target":  "Figure 17. Kiosk Interface Screen"
+    },
+    {
+        "Bookmark":  "figure_18",
+        "Display":  "55",
+        "Page":  55,
+        "PhysicalPage":  64,
+        "Target":  "Figure 18. Student Number Input Screen"
+    },
+    {
+        "Bookmark":  "figure_19",
+        "Display":  "56",
+        "Page":  56,
+        "PhysicalPage":  65,
+        "Target":  "Figure 19. Service Selection Screen (Cashier and Registrar)"
+    },
+    {
+        "Bookmark":  "figure_20",
+        "Display":  "56",
+        "Page":  56,
+        "PhysicalPage":  65,
+        "Target":  "Figure 20. Regular and Priority Selection Screen"
+    },
+    {
+        "Bookmark":  "figure_21",
+        "Display":  "57",
+        "Page":  57,
+        "PhysicalPage":  66,
+        "Target":  "Figure 21. Staff Login Interface"
+    },
+    {
+        "Bookmark":  "figure_22",
+        "Display":  "58",
+        "Page":  58,
+        "PhysicalPage":  67,
+        "Target":  "Figure 22. Cashier Panel – Ready to Serve State"
+    },
+    {
+        "Bookmark":  "figure_23",
+        "Display":  "58",
+        "Page":  58,
+        "PhysicalPage":  67,
+        "Target":  "Figure 23. Cashier Panel – Serving Ticket State"
+    },
+    {
+        "Bookmark":  "figure_24",
+        "Display":  "59",
+        "Page":  59,
+        "PhysicalPage":  68,
+        "Target":  "Figure 24. Registrar Panel – Ready to Serve State"
+    },
+    {
+        "Bookmark":  "figure_25",
+        "Display":  "60",
+        "Page":  60,
+        "PhysicalPage":  69,
+        "Target":  "Figure 25. Registrar Panel – Serving Ticket State"
+    },
+    {
+        "Bookmark":  "figure_26",
+        "Display":  "61",
+        "Page":  61,
+        "PhysicalPage":  70,
+        "Target":  "Figure 26. ITM Staff Panel"
+    },
+    {
+        "Bookmark":  "figure_27",
+        "Display":  "62",
+        "Page":  62,
+        "PhysicalPage":  71,
+        "Target":  "Figure 27. Staff Mini View"
+    },
+    {
+        "Bookmark":  "figure_28",
+        "Display":  "62",
+        "Page":  62,
+        "PhysicalPage":  71,
+        "Target":  "/Figure 28. Window Selection for Priority Processing"
+    },
+    {
+        "Bookmark":  "figure_29",
+        "Display":  "63",
+        "Page":  63,
+        "PhysicalPage":  72,
+        "Target":  "Figure 29. Security Authorization (PIN Entry Screen)"
+    },
+    {
+        "Bookmark":  "figure_30",
+        "Display":  "64",
+        "Page":  64,
+        "PhysicalPage":  73,
+        "Target":  "Figure 30. Generated Queue Ticket Confirmation"
+    },
+    {
+        "Bookmark":  "figure_31",
+        "Display":  "65",
+        "Page":  65,
+        "PhysicalPage":  74,
+        "Target":  "Figure 31. Admin Dashboard"
+    },
+    {
+        "Bookmark":  "figure_32",
+        "Display":  "66",
+        "Page":  66,
+        "PhysicalPage":  75,
+        "Target":  "Figure 32. Admin  Queue Monitoring Interface"
+    },
+    {
+        "Bookmark":  "figure_33",
+        "Display":  "67",
+        "Page":  67,
+        "PhysicalPage":  76,
+        "Target":  "Figure 33. Analytics Interface"
+    },
+    {
+        "Bookmark":  "figure_34",
+        "Display":  "68",
+        "Page":  68,
+        "PhysicalPage":  77,
+        "Target":  "Figure 34. Reports Interface"
+    },
+    {
+        "Bookmark":  "figure_35",
+        "Display":  "69",
+        "Page":  69,
+        "PhysicalPage":  78,
+        "Target":  "Figure 35. Staff Management Interface"
+    },
+    {
+        "Bookmark":  "figure_36",
+        "Display":  "69",
+        "Page":  69,
+        "PhysicalPage":  78,
+        "Target":  "Figure 36. Display Board Settings Interface"
+    },
+    {
+        "Bookmark":  "figure_37",
+        "Display":  "70",
+        "Page":  70,
+        "PhysicalPage":  79,
+        "Target":  "Figure 37. Activity Logs Interface"
+    },
+    {
+        "Bookmark":  "figure_38",
+        "Display":  "71",
+        "Page":  71,
+        "PhysicalPage":  80,
+        "Target":  "Figure 38. Queue Display Board (Now Serving \u0026 Waiting List)"
+    },
+    {
+        "Bookmark":  "figure_39",
+        "Display":  "72",
+        "Page":  72,
+        "PhysicalPage":  81,
+        "Target":  "Figure 39. Network Infrastructure Diagram"
+    },
+    {
+        "Bookmark":  "figure_40",
+        "Display":  "74",
+        "Page":  74,
+        "PhysicalPage":  83,
+        "Target":  "Figure 40. Entity Relationship Diagram of the Proposed System"
+    },
+    {
+        "Bookmark":  "figure_41",
+        "Display":  "140",
+        "Page":  140,
+        "PhysicalPage":  149,
+        "Target":  "Figure 41. System Demonstration and Evaluation with the Cashier Office"
+    },
+    {
+        "Bookmark":  "figure_42",
+        "Display":  "141",
+        "Page":  141,
+        "PhysicalPage":  150,
+        "Target":  "Figure 42. System Demonstration and Evaluation with the Registrar Office"
+    },
+    {
+        "Bookmark":  "figure_43",
+        "Display":  "141",
+        "Page":  141,
+        "PhysicalPage":  150,
+        "Target":  "Figure 43. System Demonstration \u0026 Evaluation with the ITM Department"
+    },
+    {
+        "Bookmark":  "figure_44",
+        "Display":  "142",
+        "Page":  142,
+        "PhysicalPage":  151,
+        "Target":  "Figure 44. System Demonstration and Evaluation Conducted with IT Experts and Students"
+    },
+    {
+        "Bookmark":  "table_1",
+        "Display":  "80",
+        "Page":  80,
+        "PhysicalPage":  89,
+        "Target":  "Table 1. Testing Results of System Modules"
+    },
+    {
+        "Bookmark":  "table_2",
+        "Display":  "82",
+        "Page":  82,
+        "PhysicalPage":  91,
+        "Target":  "Table 2. Distribution of Respondents of the Study"
+    },
+    {
+        "Bookmark":  "table_3",
+        "Display":  "84",
+        "Page":  84,
+        "PhysicalPage":  93,
+        "Target":  "Table 3. Five-Point Rating Scale and Verbal Interpretation"
+    },
+    {
+        "Bookmark":  "table_4",
+        "Display":  "91",
+        "Page":  91,
+        "PhysicalPage":  100,
+        "Target":  "Table 4. Summary of Software Evaluation Results by Client Respondents"
+    },
+    {
+        "Bookmark":  "table_5",
+        "Display":  "91",
+        "Page":  91,
+        "PhysicalPage":  100,
+        "Target":  "Table 5. Summary of Software Evaluation Results by IT Experts"
+    },
+    {
+        "Bookmark":  "table_6",
+        "Display":  "92",
+        "Page":  92,
+        "PhysicalPage":  101,
+        "Target":  "Table 6. Overall Software Evaluation Results Based on ISO/IEC 25010:2011 Quality Characteristics"
+    }
+]
